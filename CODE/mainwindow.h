@@ -19,6 +19,21 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+    QVector<Permis> getVectPermis() const;
+    void setVectPermis(const QVector<Permis> &value);
+
+    QVector<Agence> getVectAgences() const;
+    void setVectAgences(const QVector<Agence> &value);
+
+    QVector<Salarie> getVectSalariesNonAgences() const;
+    void setVectSalariesNonAgences(const QVector<Salarie> &value);
+
+    QVector<Garage> getVectGarages() const;
+    void setVectGarages(const QVector<Garage> &value);
+
+    Agence *getAgenceChoisis() const;
+    void setAgenceChoisis(Agence *value);
+
 private:
     Ui::MainWindow *ui;
     // Vecteur qui contient tous les salariés hors des agences.

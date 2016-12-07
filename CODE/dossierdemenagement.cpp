@@ -106,6 +106,16 @@ void DossierDemenagement::setnbDemenageurs(int value)
 {
     nbDemenageurs = value;
 }
+Salarie *DossierDemenagement::getLeCommercialDossier() const
+{
+    return leCommercialDossier;
+}
+
+void DossierDemenagement::setLeCommercialDossier(Salarie *value)
+{
+    leCommercialDossier = value;
+}
+
 
 
 

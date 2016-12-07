@@ -23,18 +23,9 @@ void Demenageur::setChef(bool value)
 
 
 
-void Demenageur::optenirPermis(int lId)
+void Demenageur::optenirPermis(Obtention*)
 {
-    QVector<Permis>vectPermisTemp=agenceChoisis.getVectPermis();
-    int idPerm=0;
-    while (!(idPerm==vectPermisTemp.size())||(vectPermisTemp[idPerm].getid()==lId))
-    {
-        if (vectPermisTemp[idPerm].getid()==lId)
-        {
-            lePermis=&vectPermisTemp[idPerm];
-        }
-    idPerm++;
-    }
+    lePermis=&vectPermisTemp[idPerm];
 }
 
 

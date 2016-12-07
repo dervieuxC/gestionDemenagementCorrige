@@ -7,6 +7,7 @@
 #include "commercial.h"
 #include "vehicule.h"
 
+
 class DossierDemenagement
 {
 public:
@@ -43,6 +44,9 @@ public:
     int getnbDemenageurs() const;
     void setnbDemenageurs(int value);
 
+    Salarie *getLeCommercialDossier() const;
+    void setLeCommercialDossier(Salarie *value);
+
 private:
     int id;
     QDate dateOuverture;
@@ -55,7 +59,7 @@ private:
     QString etatDossier;
     int nbDemenageurs;
     QVector<Demenageur> vectDemenageursDossier;
-    Commercial* leCommercialDossier;
+    Salarie * leCommercialDossier;
     QVector<Vehicule*> vectVehiculesDossier;
 };
 

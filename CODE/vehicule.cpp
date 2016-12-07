@@ -35,14 +35,33 @@ void Vehicule::setEtat(const QString &value)
 {
     etat = value;
 }
-<<<<<<< HEAD
 void Vehicule::tomberEnPanne()
 {
     int randomValue = qrand() % 100;
-    if (randomValue)
+    if (randomValue<10){
+        etat="en panne";
+    }
 }
-=======
+int Vehicule::getKm() const
+{
+    return km;
+}
 
->>>>>>> a4e30c18c99b6d5594a34658c7890a4ffec2d4f2
+void Vehicule::setKm(int value)
+{
+    km = value;
+}
+QString Vehicule::getModele() const
+{
+    return modele;
+}
+
+void Vehicule::setModele(const QString &value)
+{
+    modele = value;
+}
+
+
+
 
 

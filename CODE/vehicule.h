@@ -9,16 +9,21 @@ public:
     Vehicule(int leId, int lImmat);
     int getid() const;
     void setid(int value);
-
     int getimmat() const;
     void setimmat(int value);
-
     QString getEtat() const;
     void setEtat(const QString &value);
+    void tomberEnPanne();
+    int getKm() const;
+    void setKm(int value);
+    QString getModele() const;
+    void setModele(const QString &value);
 
 private:
     int id;
     int immat;
+    int km;
+    QString modele;
     Permis lePermis;
     QString etat;
 };

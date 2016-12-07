@@ -9,13 +9,14 @@ Commercial::Commercial() :
 experience=lExperience;
 }
 
- Commercial::nouveauDossier(QDate laDateDebutDem, QDate laDateFinDem, int leVolume, int leNombreKm, QString lAdresseChargement, QString lAdresseLivraison)
+ void Commercial::nouveauDossier(QDate laDateDebutDem, QDate laDateFinDem, int leVolume, int leNombreKm, QString lAdresseChargement, QString lAdresseLivraison)
  {
-     int lId=;//l'id dans la base+1
-     QDate laDateOuverture=;//date du jour
-     QString lEtatDossier=;//ouvert
-     int leNbDemenageurs=1;
-     Commercial*=;//l'adresse du commercial
-     DossierDemenagement nouveauDossier = new DossierDemenagement(lId, laDateOuverture, laDateDebutDem, laDateFinDem, leVolume,  leNombreKm,  lAdresseChargement,  lAdresseLivraison, lEtatDossier,  leNbDemenageurs);
+     int lId=0;//l'id dans la base+1
+     QDate laDateOuverture=QDate::currentDate();//date du jour
+     QString lEtatDossier="0";//ouvert
+     int leNbDemenageurs=0;
+     Commercial* leCommercial;//l'adresse du commercial
+     DossierDemenagement nouveauDossier(lId, laDateOuverture, laDateDebutDem, laDateFinDem, leVolume, leNombreKm, lAdresseChargement, lAdresseLivraison, lEtatDossier, leNbDemenageurs);
+     nouveauDossier.setLeCommercialDossier(leCommercial);
      //fonction ajout dossier (nouveau dossier)
  }
