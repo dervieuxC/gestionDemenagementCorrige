@@ -19,8 +19,6 @@ public:
 private slots:
     void on_pushButtonQuitter_clicked();
 
-    void on_pushButtonCreerAgence_clicked();
-
 private:
     Ui::MainWindowChef *ui;
 };

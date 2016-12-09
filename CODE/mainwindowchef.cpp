@@ -26,29 +26,3 @@ void MainWindowChef::on_pushButtonQuitter_clicked()
     close();
 }
 
-void MainWindowChef::on_pushButtonCreerAgence_clicked()
-{
-    DialogAgence monDialogAgence;
-            if(monDialogAgence.exec()==QDialog::Accepted)
-            {
-                 QString nomAgence=monDialogAgence.getNomAgence();
-                 QString adresseAgence=monDialogAgence.getAdresseAgence();
-                 QString telAgence=monDialogAgence.getTelAgence();
-                 QString faxAgence=monDialogAgence.getFaxAgence();
-                 QString mailAgence=monDialogAgence.getMailAgence();
-
-                 Agence unAgence;
-                 unAgence.setNomAgence(nomAgence.toStdString());
-                 unEleve.setAdresseAgence(adresseAgence.toStdString());
-
-                 int nbLigne = ui->tableWidgetListeEleves->rowCount();
-                 nbLigne++;
-
-                 ui->tableWidgetListeEleves->setRowCount(nbLigne);
-                 ui->tableWidgetListeEleves->setItem(nbLigne-1, 0, new QTableWidgetItem(nomAgence));
-                 ui->tableWidgetListeEleves->setItem(nbLigne-1, 1, new QTableWidgetItem(adresseAgence));
-
-
-                }
-            } else { ui->statusBar->showMessage(tr(""));}
-}
