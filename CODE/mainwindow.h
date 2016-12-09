@@ -3,13 +3,10 @@
 
 #include <QMainWindow>
 #include <QMessageBox>
-<<<<<<< HEAD
 #include "salarie.h"
 #include "agence.h"
 #include "permis.h"
 #include "garage.h"
-=======
->>>>>>> 52cfe887670317f773567bac8c2dfc7cd0ea1e17
 
 namespace Ui {
 class MainWindow;

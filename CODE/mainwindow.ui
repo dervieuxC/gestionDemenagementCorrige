@@ -43,7 +43,6 @@
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
      <layout class="QVBoxLayout" name="verticalLayout_4">
       <item>
        <spacer name="horizontalSpacer">

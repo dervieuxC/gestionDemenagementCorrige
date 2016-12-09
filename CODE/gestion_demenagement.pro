@@ -57,7 +57,7 @@ HEADERS  += mainwindow.h \
     permis.h \
     vehicule.h
 
-FORMS    += mainwindow.ui \
+FORMS  += mainwindow.ui \
     mainwindowcommercial.ui \
     mainwindowsalarie.ui \
     dialogajoutdossiercommercial.ui \
