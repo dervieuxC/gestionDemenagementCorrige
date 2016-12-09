@@ -66,6 +66,11 @@ void Salarie::setEtat(const QString &value)
 {
     etat = value;
 }
+void Salarie::demandeConge(int lId, QDate laDateDebut, QDate laDateFin, QDate laDateDemande, QString lEtatDemande, QDate laDateReponse){
+    Conge* unConge = new Conge(lId, laDateDebut, laDateFin, laDateDemande, lEtatDemande, laDateReponse);
+    vectConges.push_back(unConge);
+}
+
 
 
 
