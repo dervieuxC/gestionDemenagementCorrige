@@ -42,6 +42,8 @@ public:
     void setVectObtentions(const QVector<Obtention> &value);
     QVector<Immobilisation> getVectImmobilisations() const;
     void setVectImmobilisations(const QVector<Immobilisation> &value);
+    Salarie* getChefAgence() const;
+    void setChefAgence(const Salarie* &value);
 
 private:
     int id;
@@ -55,6 +57,7 @@ private:
     QVector<DossierDemenagement> vectDossiersDemenagement;
     QVector<Obtention> vectObtentions;
     QVector<Immobilisation> vectImmobilisations;
+    Salarie* chefAgence;
 };
 
 
