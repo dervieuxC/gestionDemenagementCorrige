@@ -31,8 +31,28 @@ void Agence::vendreVehicule(int lId)
         {
             vectVehiculesAgence.remove(lId,1);
         }
+    }   
+}
+void Agence::ajouterSalarieDemenageur(int lId, QString leNom, QString lePrenom, QString lAdresse, QDate laDateNaissance, QDate laDateEmbauche, bool leChef){
+    Demenageur* unDemenageur = new Demenageur(lId, lePrenom, leNom, lAdresse, laDateNaissance, laDateEmbauche, leChef);
+    unDemenageur->setEtat("Employé");
+    vectSalariesAgence.push_back(unDemenageur);
+}
+
+void Agence::ajouterSalarieCommercial(int lId, QString leNom, QString lePrenom, QString lAdresse, QDate laDateNaissance, QDate laDateEmbauche, QString lExperience){
+    Commercial* unCommercial = new Commercial(lId, lePrenom, leNom, lAdresse, laDateNaissance, laDateEmbauche, lExperience);
+    unCommercial->setEtat("Emplyé");
+    vectSalariesAgence.push_back(unCommercial);
+}
+
+void Agence::licencierSalarie(int lId){
+    if(lId > vectSalariesAgence.size()){
+
+    } else {
+        vectSalariesAgence.remove(lId);
     }
 }
+
 int Agence::getId() const
 {
     return id;
@@ -87,12 +107,12 @@ void Agence::setMail(const QString &value)
 {
     mail = value;
 }
-QVector<Salarie> Agence::getVectSalariesAgence() const
+QVector<Salarie*> Agence::getVectSalariesAgence() const
 {
     return vectSalariesAgence;
 }
 
-void Agence::setVectSalariesAgence(const QVector<Salarie> &value)
+void Agence::setVectSalariesAgence(const QVector<Salarie*> &value)
 {
     vectSalariesAgence = value;
 }
@@ -131,6 +151,16 @@ QVector<Immobilisation> Agence::getVectImmobilisations() const
 void Agence::setVectImmobilisations(const QVector<Immobilisation> &value)
 {
     vectImmobilisations = value;
+}
+
+Salarie *Agence::getChefAgence() const
+{
+    return chefAgence;
+}
+
+void Agence::setChefAgence(Salarie* value)
+{
+    chefAgence = value;
 }
 
 

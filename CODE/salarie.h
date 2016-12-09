@@ -12,7 +12,7 @@ public:
  Salarie(int leId, QString lePrenom, QString leNom,QString lAdresse,QDate laDateNaissance, QDate laDateEmbauche);
  Salarie();
  void demandeConge(int lId, QDate laDateDebut, QDate laDateFin, QDate laDateDemande, QString lEtatDemande, QDate laDateReponse);
-
+ void demandeArreMaladie(int lId, QDate laDateDebut, QDate laDateFin);
 
 
  int getId() const;
@@ -43,8 +43,8 @@ private:
  QString adresse;
  QDate dateNaissance;
  QDate dateEmbauche;
- QVector<Conge> vectConges;
- QVector<ArretMaladie> vectArretMaladies;
+ QVector<Conge*> vectConges;
+ QVector<ArretMaladie*> vectArretMaladies;
  QString etat;
 };
 

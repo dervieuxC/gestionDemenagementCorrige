@@ -3,6 +3,17 @@
 Salarie::Salarie()
 {
 }
+
+Salarie::Salarie(int leId, QString lePrenom, QString leNom, QString lAdresse, QDate laDateNaissance, QDate laDateEmbauche)
+{
+    id=leId;
+    prenom=lePrenom;
+    nom=leNom;
+    adresse=lAdresse;
+    dateNaissance=laDateNaissance;
+    dateEmbauche=laDateEmbauche;
+}
+
 int Salarie::getId() const
 {
     return id;
@@ -66,24 +77,15 @@ void Salarie::setEtat(const QString &value)
 {
     etat = value;
 }
+
 void Salarie::demandeConge(int lId, QDate laDateDebut, QDate laDateFin, QDate laDateDemande, QString lEtatDemande, QDate laDateReponse){
     Conge* unConge = new Conge(lId, laDateDebut, laDateFin, laDateDemande, lEtatDemande, laDateReponse);
     vectConges.push_back(unConge);
 }
 
-
-
-
-
-
-
-
-Salarie::Salarie(int leId, QString lePrenom, QString leNom, QString lAdresse, QDate laDateNaissance, QDate laDateEmbauche)
+void Salarie::demandeArreMaladie(int lId, QDate laDateDebut, QDate laDateFin)
 {
-    id=leId;
-    prenom=lePrenom;
-    nom=leNom;
-    adresse=lAdresse;
-    dateNaissance=laDateNaissance;
-    dateEmbauche=laDateEmbauche;
+    ArretMaladie* unArretMaladie = new ArretMaladie(lId, laDateDebut, laDateFin);
+    vectArretMaladies.push_back(unArretMaladie);
 }
+

@@ -18,6 +18,8 @@ SOURCES += main.cpp\
     mainwindowcommercial.cpp \
     dialogajoutdossiercommercial.cpp \
     mainwindowchef.cpp \
+    vehicule.cpp \
+    salarie.cpp \
     agence.cpp \
     arretmaladie.cpp \
     commercial.cpp \
@@ -26,51 +28,37 @@ SOURCES += main.cpp\
     dossierdemenagement.cpp \
     garage.cpp \
     immobilisation.cpp \
-    motifconge.cpp \
-    obtention.cpp \
+    mainwindowchefentreprise.cpp \
     permis.cpp \
-    salarie.cpp \
-    vehicule.cpp
+    obtention.cpp \
+    motifconge.cpp
 
 HEADERS  += mainwindow.h \
     mainwindowcommercial.h \
     mainwindowsalarie.h \
     dialogajoutdossiercommercial.h \
     mainwindowchef.h \
+    salarie.h \
     agence.h \
     arretmaladie.h \
     commercial.h \
     conge.h \
-    demenageur.cpp.autosave \
     demenageur.h \
-    demenageur.h.autosave \
     dossierdemenagement.h \
     garage.h \
     immobilisation.h \
+    mainwindowchefentreprise.h \
     motifconge.h \
     obtention.h \
     permis.h \
-    salarie.h \
-    vehicule.cpp.autosave \
     vehicule.h
 
-FORMS    += mainwindow.ui \
+FORMS  += mainwindow.ui \
     mainwindowcommercial.ui \
     mainwindowsalarie.ui \
     dialogajoutdossiercommercial.ui \
-    mainwindowchef.ui
+    mainwindowchef.ui \
+    mainwindowchefentreprise.ui
 
 RESOURCES += \
     ma_ressource.qrc
-
-OTHER_FILES += \
-    testKappler \
-    Gestion_Demenagement.odt \
-    dialogajoutdossiercommercial.ui.autosave \
-    gestion_demenagement.pro.user \
-    gestion_demenagement.pro.user.1ae72ce \
-    gestionDemenagement.pro.user \
-    README.md
-
-SUBDIRS += \
-    gestionDemenagement.pro

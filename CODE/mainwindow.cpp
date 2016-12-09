@@ -1,86 +1,54 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "agence.h"
+
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    agenceChoisis = NULL;
-    Agence nouvelleAgence(1, "test", "1 test rue du test test",1023456789, 9876543210, "test@test.test");
-    vectAgences.push_back(nouvelleAgence);
-    agenceChoisis=&nouvelleAgence;
 }
+
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
-QVector<Permis> MainWindow::getVectPermis() const
+
+void MainWindow::on_actionQuitter_triggered()
 {
-    return vectPermis;
+    QMessageBox msgBox;
+    msgBox.setInformativeText("Voulez-vous vraiment quitter");
+    msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
+    msgBox.setDefaultButton(QMessageBox::No);
+    int ret = msgBox.exec();
+
+    if (ret==QMessageBox::Yes)
+    close();
 }
 
-void MainWindow::setVectPermis(const QVector<Permis> &value)
+/*void MainWindow::ChargeLesSalaries()
 {
-    vectPermis = value;
-}
-QVector<Agence> MainWindow::getVectAgences() const
-{
-    return vectAgences;
-}
-
-void MainWindow::setVectAgences(const QVector<Agence> &value)
-{
-    vectAgences = value;
-}
-QVector<Salarie> MainWindow::getVectSalariesNonAgences() const
-{
-    return vectSalariesNonAgences;
-}
-
-void MainWindow::setVectSalariesNonAgences(const QVector<Salarie> &value)
-{
-    vectSalariesNonAgences = value;
-}
-QVector<Garage> MainWindow::getVectGarages() const
-{
-    return vectGarages;
-}
-
-void MainWindow::setVectGarages(const QVector<Garage> &value)
-{
-    vectGarages = value;
-}
-Agence *MainWindow::getAgenceChoisis() const
-{
-    return agenceChoisis;
-}
-
-void MainWindow::setAgenceChoisis(Agence *value)
-{
-    agenceChoisis = value;
-}
-
-
-/*void MainWindow::on_comboBoxAgence_activated(const QString &arg1)
-{ if(!arg1.isEmpty() )
-    {
-        int idAge=0;
-        while(idAge<vectAgences.size() && arg1!=vectAgences[idAge].get)
-        {
-            idAge++;
-        }
-        if (arg1==vectSections[noSec].getNomSection())
-        {
-            ui->labelSection->setText(arg1);
-            agenceChoisis=&vectAgences[idAge];
-        }
-    }
-    else qDebug()<<"Section vide"<<endl;
+    QSqlQuery reqSalarie("select * from Salarie");
+            while (reqSalarie.next())
+            {
+                QString sid = reqSalarie.value(0).toString();
+                QString snom = reqSalarie.value(1).toString();
+                QString sprenom = reqSalarie.value(2).toString();
+                QString sdaten = reqSalarie.value(3).toString();
+                QString FinalC = cid + " - " + cnom + " " + cprenom;
+                ui->comboBoxAfficher->addItem(FinalC);
+                Salarie newSalarie;
+                newSalarie.setId(cid);
+                newSalarie.setNom(cnom);
+                newSalarie.setPrenom(cprenom);
+                newSalarie.set();
+                newSalarie.set();
+                vectSalarie.push_back(newsalarie);
 
 }*/
 
-
-
+void MainWindow::on_pushButtonConnexion_clicked()
+{
+   //Connexion login et mot de passe
+}
