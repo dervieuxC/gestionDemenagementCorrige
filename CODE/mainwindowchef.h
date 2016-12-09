@@ -19,6 +19,8 @@ public:
 private slots:
     void on_pushButtonQuitter_clicked();
 
+    void on_pushButtonValiderDossier_clicked();
+
 private:
     Ui::MainWindowChef *ui;
 };

@@ -1,6 +1,6 @@
 #include "mainwindowchef.h"
 #include "ui_mainwindowchef.h"
-#include "dialogagence.h"
+
 
 
 MainWindowChef::MainWindowChef(QWidget *parent) :
@@ -26,3 +26,8 @@ void MainWindowChef::on_pushButtonQuitter_clicked()
     close();
 }
 
+
+void MainWindowChef::on_pushButtonValiderDossier_clicked()
+{
+
+}

@@ -201,7 +201,7 @@
                </layout>
               </item>
               <item>
-               <widget class="QTableWidget" name="tableWidgetAgences">
+               <widget class="QTableWidget" name="tableWidgetDossiers">
                 <column>
                  <property name="text">
                   <string>Nom</string>
