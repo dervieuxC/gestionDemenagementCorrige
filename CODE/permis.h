@@ -7,6 +7,7 @@ class Permis
 public:
     Permis();
     Permis(int lId, QString leLibelle);
+
     int getid() const;
     void setid(int value);
 

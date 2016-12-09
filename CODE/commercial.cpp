@@ -20,3 +20,14 @@ experience=lExperience;
      nouveauDossier.setLeCommercialDossier(leCommercial);
      //fonction ajout dossier (nouveau dossier)
  }
+ QString Commercial::getExperience() const
+ {
+     return experience;
+ }
+ 
+ void Commercial::setExperience(const QString &value)
+ {
+     experience = value;
+ }
+ 
+ 

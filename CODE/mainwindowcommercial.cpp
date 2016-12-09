@@ -1,5 +1,6 @@
 #include "mainwindowcommercial.h"
 #include "ui_mainwindowcommercial.h"
+#include <QModelIndex>
 
 
 MainWindowCommercial::MainWindowCommercial(QWidget *parent) :
@@ -23,7 +24,9 @@ void MainWindowCommercial::on_actionQuitter_triggered()
     int ret = msgBox.exec();
 
     if (ret==QMessageBox::Yes)
+    {
         close();
+    }
 }
 
 void MainWindowCommercial::on_pushButtonAjouterDossier_clicked()
@@ -34,9 +37,4 @@ void MainWindowCommercial::on_pushButtonAjouterDossier_clicked()
 void MainWindowCommercial::on_pushButtonSupprimerDossier_clicked()
 {
     //supprimer un dossier
-}
-
-void MainWindowCommercial::on_tableWidgetCommercial_clicked(const QModelIndex &index)
-{
-    //modifier un dossier sélectionné
 }
