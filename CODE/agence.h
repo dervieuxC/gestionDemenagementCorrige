@@ -16,6 +16,10 @@ public:
     Agence(int lId, QString leNom, QString lAdresse, int leTelephone, int leFax, QString leMail);
     void acheterVehicule(int lImmat, int leKm, QString leModele, Permis lePermis);
     void vendreVehicule(int lId);
+    void ajouterSalarieDemenageur(int lId, QString leNom, QString lePrenom, QString lAdresse, QDate laDateNaissance, QDate laDateEmbauche, bool leChef);
+    void ajouterSalarieCommercial(int lId, QString leNom, QString lePrenom, QString lAdresse, QDate laDateNaissance, QDate laDateEmbauche, QString lExperience);
+    void licencierSalarie(int lId);
+
     int getId() const;
     void setId(int value);
     QString getNom() const;
