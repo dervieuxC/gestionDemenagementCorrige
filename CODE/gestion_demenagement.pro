@@ -30,7 +30,8 @@ SOURCES += main.cpp\
     obtention.cpp \
     permis.cpp \
     salarie.cpp \
-    vehicule.cpp
+    vehicule.cpp \
+    mainwindowchefentreprise.cpp
 
 HEADERS  += mainwindow.h \
     mainwindowcommercial.h \
@@ -52,13 +53,15 @@ HEADERS  += mainwindow.h \
     permis.h \
     salarie.h \
     vehicule.cpp.autosave \
-    vehicule.h
+    vehicule.h \
+    mainwindowchefentreprise.h
 
 FORMS    += mainwindow.ui \
     mainwindowcommercial.ui \
     mainwindowsalarie.ui \
     dialogajoutdossiercommercial.ui \
-    mainwindowchef.ui
+    mainwindowchef.ui \
+    mainwindowchefentreprise.ui
 
 RESOURCES += \
     ma_ressource.qrc

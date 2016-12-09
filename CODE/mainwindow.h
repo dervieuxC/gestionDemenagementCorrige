@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 #include <QVector>
 #include <QMainWindow>
+#include <QMessageBox>
 #include "salarie.h"
 #include "agence.h"
 #include "permis.h"
@@ -33,6 +34,11 @@ public:
 
     Agence *getAgenceChoisis() const;
     void setAgenceChoisis(Agence *value);
+
+private slots:
+    void on_actionQuitter_triggered();
+
+    void on_pushButtonConnexion_clicked();
 
 private:
     Ui::MainWindow *ui;

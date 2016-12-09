@@ -35,5 +35,5 @@ QString DialogAjoutDossierCommercial::getAdrLivraison()
 
 QString DialogAjoutDossierCommercial::getChefEquipe()
 {
-    return ui->lineEditChefEquipeCommercial->text();
+    return ui->comboBoxChefEquipe->currentText();
 }
