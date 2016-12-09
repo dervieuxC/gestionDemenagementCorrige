@@ -29,6 +29,7 @@ INSERT INTO salarie VALUES
 ('','1991-06-09','1961-10-05','Avenu Doloress','Saint-Bonnet', '05500','Sécurithé','Jacques','D',1,NULL,1,'sjacques','ini01','V', '0654667221');
 
 INSERT INTO obtention VALUES
+('1992-09-12',2,2),
 ('1991-02-12',1,1),
 ('1999-05-25',3,4),
 ('1997-03-30',2,3);
