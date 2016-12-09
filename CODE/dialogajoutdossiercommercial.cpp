@@ -37,3 +37,8 @@ QString DialogAjoutDossierCommercial::getChefEquipe()
 {
     return ui->lineEditChefEquipeCommercial->text();
 }
+
+QString DialogAjoutDossierCommercial::getAgence()
+{
+    return ui->lineEditAgenceCommercial->text();
+}

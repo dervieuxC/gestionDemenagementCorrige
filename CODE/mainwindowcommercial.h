@@ -1,10 +1,9 @@
-#ifndef MAINWINDOWCHEF_H
-#define MAINWINDOWCHEF_H
-
+#ifndef MAINWINDOWCOMMERCIAL_H
+#define MAINWINDOWCOMMERCIAL_H
 #include <QMainWindow>
 #include <QMessageBox>
-#include <QModelIndex>
 #include "dialogajoutdossiercommercial.h"
+
 
 namespace Ui {
 class MainWindowCommercial;
@@ -25,10 +24,9 @@ private slots:
 
     void on_pushButtonSupprimerDossier_clicked();
 
-    void on_tableWidgetCommercial_clicked(const QModelIndex &index);
-
 private:
     Ui::MainWindowCommercial *ui;
 };
+
 
 #endif // MAINWINDOWCHEF_H
