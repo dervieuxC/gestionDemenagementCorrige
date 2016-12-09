@@ -14,6 +14,61 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+<<<<<<< HEAD
+   <widget class="QTableWidget" name="tableWidgetSalarie">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>40</y>
+      <width>621</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Numéro</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Date_Debut</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Chargement</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Livraison</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Chef_Equipe</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Etat</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>340</y>
+      <width>144</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Demande de congé</string>
+    </property>
+   </widget>
+=======
    <layout class="QVBoxLayout" name="verticalLayout_5">
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -166,6 +221,7 @@
      </layout>
     </item>
    </layout>
+>>>>>>> 52cfe887670317f773567bac8c2dfc7cd0ea1e17
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

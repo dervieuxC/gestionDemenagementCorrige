@@ -21,17 +21,19 @@ SOURCES += main.cpp\
     dialogagence.cpp \
     vehicule.cpp \
     salarie.cpp \
+    agence.cpp \
+    arretmaladie.cpp \
+    commercial.cpp \
+    conge.cpp \
+    demenageur.cpp \
+    dossierdemenagement.cpp \
+    garage.cpp \
+    immobilisation.cpp \
+    mainwindowchefentreprise.cpp \
+    vehicule.cpp \
     permis.cpp \
     obtention.cpp \
-    motifconge.cpp \
-    immobilisation.cpp \
-    garage.cpp \
-    dossierdemenagement.cpp \
-    demenageur.cpp \
-    conge.cpp \
-    commercial.cpp \
-    arretmaladie.cpp \
-    agence.cpp
+    motifconge.cpp
 
 HEADERS  += mainwindow.h \
     mainwindowcommercial.h \
@@ -41,34 +43,27 @@ HEADERS  += mainwindow.h \
     dialogagence.h \
     vehicule.h \
     salarie.h \
-    permis.h \
-    obtention.h \
-    motifconge.h \
-    immobilisation.h \
-    garage.h \
-    dossierdemenagement.h \
-    demenageur.h \
-    conge.h \
-    commercial.h \
+    agence.h \
     arretmaladie.h \
-    agence.h
+    commercial.h \
+    conge.h \
+    demenageur.h \
+    dossierdemenagement.h \
+    garage.h \
+    immobilisation.h \
+    mainwindowchefentreprise.h \
+    motifconge.h \
+    obtention.h \
+    permis.h \
+    vehicule.h
 
 FORMS    += mainwindow.ui \
     mainwindowcommercial.ui \
     mainwindowsalarie.ui \
     dialogajoutdossiercommercial.ui \
     mainwindowchef.ui \
+    mainwindowchefentreprise.ui \
     dialogagence.ui
 
 RESOURCES += \
     ma_ressource.qrc
-
-OTHER_FILES += \
-    README.md \
-    Gestion_Demenagement.odt \
-    gestion_demenagement.pro.user.1ae72ce \
-    gestion_demenagement.pro.user \
-    images/list-remove.png \
-    images/list-add.png \
-    images/dialog-ok-apply.png \
-    images/demenagement-toulouse.jpg

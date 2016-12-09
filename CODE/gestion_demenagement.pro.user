@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
+<<<<<<< HEAD
 <!-- Written by QtCreator 3.2.1, 2016-12-09T09:51:24. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
   <value type="QByteArray">{af57003c-a0c2-4a2c-aab2-67f0e2f0da13}</value>
+=======
+<!-- Written by QtCreator 3.2.1, 2016-12-07T12:02:14. -->
+<qtcreator>
+ <data>
+  <variable>EnvironmentId</variable>
+  <value type="QByteArray">{1ae72ceb-8ce5-4185-86b8-97be1ca86844}</value>
+>>>>>>> e6d7b5606b71ce0f1c5278aad392b4123d3ef6a8
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -60,12 +68,20 @@
   <valuemap type="QVariantMap">
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop</value>
+<<<<<<< HEAD
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{2ab53cf7-2716-43f1-b0ad-f16fb18d0c52}</value>
+=======
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{ed225c22-0e0c-4e86-b243-c5296da1d5c1}</value>
+>>>>>>> e6d7b5606b71ce0f1c5278aad392b4123d3ef6a8
    <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/jbaroncampos/Documents/gestDemenagementDebug</value>
+=======
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ahuguet/Documents/QtCreator/build-gestion_demenagement-Desktop-Debug</value>
+>>>>>>> e6d7b5606b71ce0f1c5278aad392b4123d3ef6a8
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -124,7 +140,11 @@
     <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">true</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/jbaroncampos/Documents/gestDemenagement/build-gestion_demenagement-Desktop-Release</value>
+=======
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ahuguet/Documents/QtCreator/build-gestion_demenagement-Desktop-Release</value>
+>>>>>>> e6d7b5606b71ce0f1c5278aad392b4123d3ef6a8
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -235,8 +255,13 @@
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">gestion_demenagement</value>
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/jbaroncampos/Documents/gestDemenagement/CODE/gestion_demenagement.pro</value>
+=======
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">gestion_demenagement2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/ahuguet/Documents/gestDemenagement/CODE/gestion_demenagement.pro</value>
+>>>>>>> e6d7b5606b71ce0f1c5278aad392b4123d3ef6a8
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.CommandLineArguments"></value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.ProFile">gestion_demenagement.pro</value>
     <value type="bool" key="Qt4ProjectManager.Qt4RunConfiguration.UseDyldImageSuffix">false</value>
