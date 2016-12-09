@@ -12,8 +12,11 @@ public:
  Salarie(int leId, QString lePrenom, QString leNom,QString lAdresse,QDate laDateNaissance, QDate laDateEmbauche);
  Salarie();
  void demandeConge(int lId, QDate laDateDebut, QDate laDateFin, QDate laDateDemande, QString lEtatDemande, QDate laDateReponse);
+<<<<<<< HEAD
+ void demandeArreMaladie();
 
-
+=======
+>>>>>>> 7e6620e70209ee335f6fae19bfb38c8d743dd835
 
  int getId() const;
  void setId(int value);

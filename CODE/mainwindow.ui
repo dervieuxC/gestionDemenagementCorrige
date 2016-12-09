@@ -19,7 +19,35 @@
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout_5">
     <item>
+<<<<<<< HEAD
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Identifiant :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEditID"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="labelMDP">
+        <property name="text">
+         <string>Mot de Passe : </string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEditMDP"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+=======
      <layout class="QVBoxLayout" name="verticalLayout_4">
+>>>>>>> 117da4c20d490ba48bf5e9a93a72489c3b39d092
       <item>
        <spacer name="horizontalSpacer">
         <property name="orientation">

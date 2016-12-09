@@ -7,15 +7,21 @@ class Vehicule
 public:
     Vehicule();
     Vehicule(int leId, int lImmat);
+
+    void tomberEnPanne();
+
     int getid() const;
     void setid(int value);
+
     int getimmat() const;
     void setimmat(int value);
+
     QString getEtat() const;
     void setEtat(const QString &value);
-    void tomberEnPanne();
+
     int getKm() const;
     void setKm(int value);
+
     QString getModele() const;
     void setModele(const QString &value);
 
