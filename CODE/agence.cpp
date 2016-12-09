@@ -152,6 +152,16 @@ void Agence::setVectImmobilisations(const QVector<Immobilisation> &value)
 {
     vectImmobilisations = value;
 }
+Salarie *Agence::getChefDAgence() const
+{
+    return chefDAgence;
+}
+
+void Agence::setChefDAgence(Salarie *value)
+{
+    chefDAgence = value;
+}
+
 
 Salarie *Agence::getChefAgence() const
 {
