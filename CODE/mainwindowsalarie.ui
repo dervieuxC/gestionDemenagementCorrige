@@ -14,7 +14,6 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-<<<<<<< HEAD
    <widget class="QTableWidget" name="tableWidgetSalarie">
     <property name="geometry">
      <rect>
@@ -68,7 +67,6 @@
      <string>Demande de congé</string>
     </property>
    </widget>
-=======
    <layout class="QVBoxLayout" name="verticalLayout_5">
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -221,7 +219,6 @@
      </layout>
     </item>
    </layout>
->>>>>>> 52cfe887670317f773567bac8c2dfc7cd0ea1e17
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

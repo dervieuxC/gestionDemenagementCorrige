@@ -6,8 +6,11 @@
    <rect>
     <x>0</x>
     <y>0</y>
+<<<<<<< HEAD
     <width>773</width>
     <height>916</height>
+=======
+>>>>>>> e8c8174ad378d40315ee9be8805872aa9aff1860
     <width>655</width>
     <height>414</height>
    </rect>
@@ -53,6 +56,7 @@
         </layout>
        </item>
        <item>
+<<<<<<< HEAD
 	<spacer name="horizontalSpacer">
   <layout class="QVBoxLayout" name="verticalLayout_8">
    <item>
@@ -60,13 +64,18 @@
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_6">
        <item>
+=======
+>>>>>>> e8c8174ad378d40315ee9be8805872aa9aff1860
         <spacer name="horizontalSpacer_4">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
          <property name="sizeHint" stdset="0">
           <size>
+<<<<<<< HEAD
            <width>40</width>
+=======
+>>>>>>> e8c8174ad378d40315ee9be8805872aa9aff1860
            <width>618</width>
            <height>20</height>
           </size>
@@ -81,6 +90,7 @@
             <widget class="QLabel" name="labelDateFinCommercial">
              <property name="text">
               <string>Date de fin :</string>
+<<<<<<< HEAD
         <layout class="QVBoxLayout" name="verticalLayout_5">
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -95,6 +105,10 @@
               <string>Ajout un dossier commercial</string>
              </property>
             </widget>
+=======
+		</property>
+	     </widget>
+>>>>>>> e8c8174ad378d40315ee9be8805872aa9aff1860
            </item>
            <item>
             <widget class="QLabel" name="labelLivraisonCommercial">
@@ -369,7 +383,10 @@
        </item>
        <item>
         <spacer name="horizontalSpacer_5">
+<<<<<<< HEAD
         <spacer name="horizontalSpacer_3">
+=======
+>>>>>>> e8c8174ad378d40315ee9be8805872aa9aff1860
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
@@ -491,6 +508,7 @@
      </property>
     </widget>
    </item>
+<<<<<<< HEAD
       </layout>
      </item>
      <item>
@@ -506,6 +524,9 @@
     </layout>
    </item>
   </layout>
+=======
+   </layout>
+>>>>>>> e8c8174ad378d40315ee9be8805872aa9aff1860
  </widget>
  <resources/>
  <connections>
