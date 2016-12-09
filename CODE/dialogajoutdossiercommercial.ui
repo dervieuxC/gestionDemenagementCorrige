@@ -6,13 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-<<<<<<< HEAD
     <width>773</width>
     <height>916</height>
-=======
->>>>>>> e8c8174ad378d40315ee9be8805872aa9aff1860
-    <width>655</width>
-    <height>414</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -56,27 +51,13 @@
         </layout>
        </item>
        <item>
-<<<<<<< HEAD
 	<spacer name="horizontalSpacer">
-  <layout class="QVBoxLayout" name="verticalLayout_8">
-   <item>
-    <layout class="QVBoxLayout" name="verticalLayout_7">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_6">
-       <item>
-=======
->>>>>>> e8c8174ad378d40315ee9be8805872aa9aff1860
-        <spacer name="horizontalSpacer_4">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
          <property name="sizeHint" stdset="0">
           <size>
-<<<<<<< HEAD
            <width>40</width>
-=======
->>>>>>> e8c8174ad378d40315ee9be8805872aa9aff1860
-           <width>618</width>
            <height>20</height>
           </size>
          </property>
@@ -90,25 +71,8 @@
             <widget class="QLabel" name="labelDateFinCommercial">
              <property name="text">
               <string>Date de fin :</string>
-<<<<<<< HEAD
-        <layout class="QVBoxLayout" name="verticalLayout_5">
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_5">
-           <item>
-            <widget class="QLabel" name="label">
-             <property name="font">
-              <font>
-               <pointsize>12</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Ajout un dossier commercial</string>
-             </property>
-            </widget>
-=======
-		</property>
-	     </widget>
->>>>>>> e8c8174ad378d40315ee9be8805872aa9aff1860
+	     </property>
+	    </widget>
            </item>
            <item>
             <widget class="QLabel" name="labelLivraisonCommercial">
@@ -383,11 +347,7 @@
        </item>
        <item>
         <spacer name="horizontalSpacer_5">
-<<<<<<< HEAD
-        <spacer name="horizontalSpacer_3">
-=======
->>>>>>> e8c8174ad378d40315ee9be8805872aa9aff1860
-         <property name="orientation">
+                <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
          <property name="sizeHint" stdset="0">
@@ -508,25 +468,7 @@
      </property>
     </widget>
    </item>
-<<<<<<< HEAD
-      </layout>
-     </item>
-     <item>
-      <widget class="QDialogButtonBox" name="buttonBox">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="standardButtons">
-        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
   </layout>
-=======
-   </layout>
->>>>>>> e8c8174ad378d40315ee9be8805872aa9aff1860
  </widget>
  <resources/>
  <connections>
