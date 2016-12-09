@@ -12,8 +12,6 @@ public:
  Salarie(int leId, QString lePrenom, QString leNom,QString lAdresse,QDate laDateNaissance, QDate laDateEmbauche);
  Salarie();
 
-
-
  int getId() const;
  void setId(int value);
 

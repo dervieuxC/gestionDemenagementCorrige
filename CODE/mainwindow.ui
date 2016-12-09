@@ -28,7 +28,7 @@
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QLineEdit" name="lineEdit"/>
+       <widget class="QLineEdit" name="lineEditID"/>
       </item>
       <item row="1" column="0">
        <widget class="QLabel" name="labelMDP">
@@ -80,17 +80,6 @@
      </layout>
     </item>
    </layout>
-   <zorder>lineEditMDP</zorder>
-   <zorder>labelMDP</zorder>
-   <zorder>pushButtonConnexion</zorder>
-   <zorder>lineEdit</zorder>
-   <zorder>label</zorder>
-   <zorder>horizontalSpacer</zorder>
-   <zorder>labelMDP</zorder>
-   <zorder>label</zorder>
-   <zorder>lineEdit</zorder>
-   <zorder>horizontalSpacer</zorder>
-   <zorder>horizontalSpacer_2</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
