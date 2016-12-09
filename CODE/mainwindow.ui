@@ -19,7 +19,6 @@
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout_5">
     <item>
-<<<<<<< HEAD
      <layout class="QFormLayout" name="formLayout">
       <item row="0" column="0">
        <widget class="QLabel" name="label">
@@ -45,9 +44,7 @@
     </item>
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
-=======
      <layout class="QVBoxLayout" name="verticalLayout_4">
->>>>>>> 117da4c20d490ba48bf5e9a93a72489c3b39d092
       <item>
        <spacer name="horizontalSpacer">
         <property name="orientation">
