@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `salarie` (
   `sal_cp` VARCHAR(5) NOT NULL,
   `sal_nom` VARCHAR(45) NOT NULL,
   `sal_prenom` VARCHAR(45) NOT NULL,
-  `sal_permis` VARCHAR(2) NULL,
+  `sal_type` VARCHAR(2) NULL,
   `sal_chef` TINYINT(1) NOT NULL,
   `sal_experience` VARCHAR(255) NULL,
   `sal_agence` INT NOT NULL,
@@ -43,6 +43,8 @@ CREATE TABLE IF NOT EXISTS `salarie` (
   `sal_mdp` VARCHAR(255) NOT NULL,
   `sal_etat` VARCHAR(2) NOT NULL DEFAULT 'V',
   `sal_tel` VARCHAR(10) NOT NULL,
+  `sal_heureSup` INT NULL DEFAULT 0,
+  `sal_joursRestant` INT NOT NULL DEFAULT 30,
   PRIMARY KEY (`sal_id`),
   FOREIGN KEY (`sal_agence`)
     REFERENCES `agence` (`age_id`))
@@ -127,13 +129,16 @@ ENGINE = InnoDB;
 -- Table `vehicule`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `vehicule` (
-  `veh_id` INT NOT NULL AUTO_INCREMENT,
+  `veh_immat` VARCHAR (9) NOT NULL,
   `veh_libelle` VARCHAR(255) NOT NULL,
   `veh_agence` INT NOT NULL,
   `veh_etat` VARCHAR(2) NOT NULL DEFAULT 'V',
-  PRIMARY KEY (`veh_id`),
+  `veh_per` INT NULL,
+  PRIMARY KEY (`veh_immat`),
     FOREIGN KEY (`veh_agence`)
-    REFERENCES `agence` (`age_id`))
+    REFERENCES `agence` (`age_id`),
+    FOREIGN KEY (`veh_per`)
+    REFERENCES `permis` (`per_id`))
     
 ENGINE = InnoDB;
 
@@ -147,12 +152,12 @@ CREATE TABLE IF NOT EXISTS `immobilisation` (
   `imm_date_debut` DATE NOT NULL,
   `imm_date_fin` DATE NULL,
   `imm_garage` INT NULL,
-  `imm_vehicule` INT NOT NULL,
+  `imm_vehicule` VARCHAR (9) NOT NULL,
   PRIMARY KEY (`imm_id`),
     FOREIGN KEY (`imm_garage`)
     REFERENCES `garage` (`gar_id`), 
     FOREIGN KEY (`imm_vehicule`)
-    REFERENCES `vehicule` (`veh_id`))
+    REFERENCES `vehicule` (`veh_immat`))
     
 ENGINE = InnoDB;
 
@@ -209,7 +214,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `permis` (
   `per_id` INT NOT NULL AUTO_INCREMENT,
-  `per_libelle` VARCHAR(255) NOT NULL,
+  `per_libelle` VARCHAR(4) NOT NULL,
   PRIMARY KEY (`per_id`))
 ENGINE = InnoDB;
 
@@ -235,12 +240,12 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `utiliser` (
   `uti_dossier` INT NOT NULL,
-  `uti_vehicule` INT NOT NULL,
+  `uti_vehicule` VARCHAR (9) NOT NULL,
   PRIMARY KEY (`uti_dossier`, `uti_vehicule`),
     FOREIGN KEY (`uti_dossier`)
     REFERENCES `dossier_demenagement` (`dos_numero`),
     FOREIGN KEY (`uti_vehicule`)
-    REFERENCES `vehicule` (`veh_id`))
+    REFERENCES `vehicule` (`veh_immat`))
     
 ENGINE = InnoDB;
 
