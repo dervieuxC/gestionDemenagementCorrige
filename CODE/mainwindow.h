@@ -21,9 +21,6 @@ public:
     void ChargeLesSalaries();
     ~MainWindow();
 
-private slots:
-    void on_actionQuitter_triggered();
-
 
 private slots:
     void on_actionQuitter_triggered();

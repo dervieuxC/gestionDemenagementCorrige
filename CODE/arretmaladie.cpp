@@ -1,7 +1,10 @@
 #include "arretmaladie.h"
 
-ArretMaladie::ArretMaladie()
-{
+ArretMaladie::ArretMaladie(){}
+ArretMaladie::ArretMaladie(int lId, QDate laDateDebut, QDate laDateFin){
+    id=lId;
+    dateDebut=laDateDebut;
+    dateFin=laDateFin;
 }
 int ArretMaladie::getId() const
 {

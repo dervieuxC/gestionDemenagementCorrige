@@ -107,12 +107,12 @@ void Agence::setMail(const QString &value)
 {
     mail = value;
 }
-QVector<Salarie> Agence::getVectSalariesAgence() const
+QVector<Salarie*> Agence::getVectSalariesAgence() const
 {
     return vectSalariesAgence;
 }
 
-void Agence::setVectSalariesAgence(const QVector<Salarie> &value)
+void Agence::setVectSalariesAgence(const QVector<Salarie*> &value)
 {
     vectSalariesAgence = value;
 }
@@ -152,23 +152,13 @@ void Agence::setVectImmobilisations(const QVector<Immobilisation> &value)
 {
     vectImmobilisations = value;
 }
-Salarie *Agence::getChefDAgence() const
-{
-    return chefDAgence;
-}
-
-void Agence::setChefDAgence(Salarie *value)
-{
-    chefDAgence = value;
-}
-
 
 Salarie *Agence::getChefAgence() const
 {
     return chefAgence;
 }
 
-void Agence::setChefAgence(const Salarie *&value)
+void Agence::setChefAgence(Salarie* value)
 {
     chefAgence = value;
 }
