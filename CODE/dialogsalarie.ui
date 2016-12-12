@@ -13,39 +13,6 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-<<<<<<< HEAD
-  <widget class="QWidget" name="centralwidget">
-   <property name="geometry">
-    <rect>
-     <x>-10</x>
-     <y>30</y>
-     <width>712</width>
-     <height>383</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout_5">
-    <item>
-     <layout class="QVBoxLayout" name="verticalLayout_4">
-      <item>
-       <spacer name="horizontalSpacer_3">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>688</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
-        <item>
-         <spacer name="verticalSpacer_2">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-=======
   <layout class="QVBoxLayout" name="verticalLayout_4">
    <item>
     <widget class="QMenuBar" name="menubar">
@@ -85,7 +52,6 @@
          <column>
           <property name="text">
            <string>Livraison</string>
->>>>>>> ab116adad5ebde2583c631b59f39636352fef60e
           </property>
          </column>
          <column>

@@ -14,22 +14,13 @@ class DialogAgence : public QDialog
 public:
     explicit DialogAgence(QWidget *parent = 0);
     ~DialogAgence();
-<<<<<<< HEAD
-    /*
-=======
->>>>>>> ab116adad5ebde2583c631b59f39636352fef60e
     QString getNomAgence();
     QString getRueAgence();
     QString getVilleAgence();
     QString getCPAgence();
-    QString getTelAgence();
-    QString getFaxAgence();
+    int getTelAgence();
+    int getFaxAgence();
     QString getMailAgence();
-<<<<<<< HEAD
-    */
-=======
-
->>>>>>> ab116adad5ebde2583c631b59f39636352fef60e
 private:
     Ui::DialogAgence *ui;
 };
