@@ -13,6 +13,8 @@ public:
  Salarie();
  void demandeConge(int lId, QDate laDateDebut, QDate laDateFin, QDate laDateDemande, QString lEtatDemande, QDate laDateReponse);
  void demandeArreMaladie(int lId, QDate laDateDebut, QDate laDateFin);
+ void finConge(int lId);
+ void finArretMaladie(int lId);
 
 
  int getId() const;

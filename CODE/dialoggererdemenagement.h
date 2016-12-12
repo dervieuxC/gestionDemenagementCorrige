@@ -14,7 +14,13 @@ class DialogGererDemenagement : public QDialog
 public:
     explicit DialogGererDemenagement(QWidget *parent = 0);
     ~DialogGererDemenagement();
-    
+    QString getDateDebut();
+    QString getDateFin();
+    QString getEtat();
+
+private slots:
+    void on_pushButtonAnnuler_clicked();
+
 private:
     Ui::DialogGererDemenagement *ui;
 };

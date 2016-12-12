@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindowChefEntreprise</class>
- <widget class="QMainWindow" name="MainWindowChefEntreprise">
+ <author/>
+ <comment/>
+ <exportmacro/>
+ <class>DialogChefEntreprise</class>
+ <widget class="QDialog" name="DialogChefEntreprise">
   <property name="geometry">
-   <rect>
+<rect>
     <x>0</x>
     <y>0</y>
     <width>926</width>
@@ -364,7 +366,7 @@
      <x>0</x>
      <y>0</y>
      <width>926</width>
-     <height>29</height>
+     <height>27</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFichier">

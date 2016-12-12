@@ -50,12 +50,32 @@ void MainWindow::on_actionQuitter_triggered()
 
 void MainWindow::on_pushButtonConnexion_clicked()
 {
-   //Connexion login et mot de passe
-   //if connexion ouvrir mainwindows correspondante
-    MainWindowChef mainChef;
-    MainWindowChefEntreprise mainChefEntreprise;
-    MainWindowCommercial mainCommercial;
-    MainWindowSalarie mainSalarie;
+    QSqlQuery laRequete;
+    QString requeteText="select";
+    if(1==1)//requete renvoi chef
+    {
+        DialogSalarie dialSalarie;
+        if (dialSalarie.exec() ==QDialog::Accepted)
+        {}
+    }
+    /*if(1==0)//requete renvoi chef d'entreprise
+    {
+        MainWindowChefEntreprise mainChefEntreprise;
+        //if (mainChefEntreprise.exec() ==QDialog::Accepted)
+        //{}
+    }
+    if(1==0)//requete renvoi commercial
+    {
+        MainWindowCommercial mainCommercial;
+        if (mainCommercial.exec() ==QDialog::Accepted)
+        {}
+    }
+    if(1==0)//requete renvoi salarie
+    {
+        MainWindowSalarie mainSalarie;
+        //if (mainSalarie.exec() ==QDialog::Accepted)
+        //{}
+    }*/
 
 
 }
