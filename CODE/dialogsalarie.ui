@@ -3,7 +3,7 @@
  <comment/>
  <exportmacro/>
  <class>DialogSalarie</class>
- <widget class="QDialog" name="DialogSalarie">
+ <widget name="DialogSalarie" class="QDialog">
   <property name="geometry">
 <rect>
     <x>0</x>
@@ -87,6 +87,13 @@
            <layout class="QHBoxLayout" name="horizontalLayout">
             <item>
              <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QPushButton" name="pushButtonDemandeConge">
+                <property name="text">
+                 <string>Demande de congé</string>
+                </property>
+               </widget>
+              </item>
               <item>
                <widget class="QPushButton" name="pushButtonDemandeAbsence">
                 <property name="text">
@@ -242,5 +249,3 @@
  <resources/>
  <connections/>
 </ui>
-
-
