@@ -32,7 +32,8 @@ SOURCES += main.cpp\
     permis.cpp \
     obtention.cpp \
     motifconge.cpp \
-    dialogagence.cpp
+    dialogagence.cpp \
+    dialogsalarie.cpp
 
 HEADERS  += mainwindow.h \
     mainwindowcommercial.h \
@@ -53,7 +54,8 @@ HEADERS  += mainwindow.h \
     obtention.h \
     permis.h \
     vehicule.h \
-    dialogagence.h
+    dialogagence.h \
+    dialogsalarie.h
 
 FORMS  += mainwindow.ui \
     mainwindowcommercial.ui \
@@ -61,7 +63,8 @@ FORMS  += mainwindow.ui \
     dialogajoutdossiercommercial.ui \
     mainwindowchef.ui \
     mainwindowchefentreprise.ui \
-    dialogagence.ui
+    dialogagence.ui \
+    dialogsalarie.ui
 
 RESOURCES += \
     ma_ressource.qrc

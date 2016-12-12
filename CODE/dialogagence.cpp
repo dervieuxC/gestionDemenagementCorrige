@@ -25,12 +25,12 @@ QString DialogAgence::getAdresseAgence()
 
 int DialogAgence::getTelAgence()
 {
-    return ui->lineEditTelAgence->text();
+    return ui->lineEditTelAgence->text().toInt();
 }
 
 int DialogAgence::getFaxAgence()
 {
-    return ui->lineEditFaxAgence->text();
+    return ui->lineEditFaxAgence->text().toInt();
 }
 
 QString DialogAgence::getMailAgence()
