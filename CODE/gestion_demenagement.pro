@@ -77,7 +77,8 @@ FORMS  += mainwindow.ui \
     dialogcommercial.ui \
     dialogajouteremploye.ui \
     dialogdemandeabsence.ui \
-    dialogajoutarretmaladie.ui
+    dialogajoutarretmaladie.ui \
+    dialogsalarie.ui
 
 RESOURCES += \
     ma_ressource.qrc
