@@ -7,6 +7,10 @@
 #include "agence.h"
 #include "permis.h"
 #include "garage.h"
+#include "mainwindowchef.h"
+#include "mainwindowchefentreprise.h"
+#include "mainwindowcommercial.h"
+#include "mainwindowsalarie.h"
 
 namespace Ui {
 class MainWindow;

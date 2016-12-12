@@ -51,4 +51,11 @@ void MainWindow::on_actionQuitter_triggered()
 void MainWindow::on_pushButtonConnexion_clicked()
 {
    //Connexion login et mot de passe
+   //if connexion ouvrir mainwindows correspondante
+    MainWindowChef mainChef;
+    MainWindowChefEntreprise mainChefEntreprise;
+    MainWindowCommercial mainCommercial;
+    MainWindowSalarie mainSalarie;
+
+
 }
