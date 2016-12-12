@@ -24,6 +24,40 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
+-- Table `garage`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `garage` (
+  `gar_id` INT NOT NULL AUTO_INCREMENT,
+  `gar_nom` VARCHAR(45) NOT NULL,
+  `gar_rue` VARCHAR(255) NOT NULL,
+  `gar_ville` VARCHAR(255) NOT NULL,
+  `gar_cp` VARCHAR(5) NOT NULL,
+  `gar_telephone` VARCHAR(10) NOT NULL,
+  PRIMARY KEY (`gar_id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `permis`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `permis` (
+  `per_id` INT NOT NULL AUTO_INCREMENT,
+  `per_libelle` VARCHAR(4) NOT NULL,
+  PRIMARY KEY (`per_id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `motif_conge`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `motif_conge` (
+  `mot_id` INT NOT NULL AUTO_INCREMENT,
+  `mot_libelle` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`mot_id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
 -- Table `salarie`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `salarie` (
@@ -38,16 +72,35 @@ CREATE TABLE IF NOT EXISTS `salarie` (
   `sal_type` VARCHAR(2) NULL,
   `sal_chef` TINYINT(1) NOT NULL,
   `sal_experience` VARCHAR(255) NULL,
-  `sal_agence` INT NOT NULL,
   `sal_login` VARCHAR(255) NOT NULL,
   `sal_mdp` VARCHAR(255) NOT NULL,
   `sal_etat` VARCHAR(2) NOT NULL DEFAULT 'V',
   `sal_tel` VARCHAR(10) NOT NULL,
   `sal_heureSup` INT NULL DEFAULT 0,
   `sal_joursRestant` INT NOT NULL DEFAULT 30,
+  `sal_agence` INT NOT NULL,
   PRIMARY KEY (`sal_id`),
   FOREIGN KEY (`sal_agence`)
-    REFERENCES `agence` (`age_id`))
+  	REFERENCES `agence` (`age_id`))
+    
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `vehicule`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `vehicule` (
+  `veh_immat` VARCHAR (9) NOT NULL,
+  `veh_libelle` VARCHAR(255) NOT NULL,
+  `veh_volume` INT NOT NULL,
+  `veh_etat` VARCHAR(2) NOT NULL DEFAULT 'V',
+  `veh_agence` INT NOT NULL,
+  `veh_per` INT NULL,
+  PRIMARY KEY (`veh_immat`),
+    FOREIGN KEY (`veh_agence`)
+    	REFERENCES `agence` (`age_id`),
+    FOREIGN KEY (`veh_per`)
+    	REFERENCES `permis` (`per_id`))
     
 ENGINE = InnoDB;
 
@@ -63,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `arret_maladie` (
   `arr_sal` INT NOT NULL,
   PRIMARY KEY (`arr_id`),
     FOREIGN KEY (`arr_sal`)
-    REFERENCES `salarie` (`sal_id`))
+    	REFERENCES `salarie` (`sal_id`))
     
 ENGINE = InnoDB;
 
@@ -76,18 +129,8 @@ CREATE TABLE IF NOT EXISTS `commercial` (
   `com_sal` INT NOT NULL,
   PRIMARY KEY (`com_sal`),
     FOREIGN KEY (`com_sal`)
-    REFERENCES `salarie` (`sal_id`))
+    	REFERENCES `salarie` (`sal_id`))
     
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `motif_conge`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `motif_conge` (
-  `mot_id` INT NOT NULL AUTO_INCREMENT,
-  `mot_libelle` VARCHAR(255) NOT NULL,
-  PRIMARY KEY (`mot_id`))
 ENGINE = InnoDB;
 
 
@@ -104,41 +147,9 @@ CREATE TABLE IF NOT EXISTS `conge` (
   `con_motif` INT NOT NULL,
   PRIMARY KEY (`con_id`),
     FOREIGN KEY (`con_sal`)
-    REFERENCES `salarie` (`sal_id`),   
+    	REFERENCES `salarie` (`sal_id`),   
     FOREIGN KEY (`con_motif`)
-    REFERENCES `motif_conge` (`mot_id`))
-    
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `garage`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `garage` (
-  `gar_id` INT NOT NULL AUTO_INCREMENT,
-  `gar_nom` VARCHAR(45) NOT NULL,
-  `gar_rue` VARCHAR(255) NOT NULL,
-  `gar_ville` VARCHAR(255) NOT NULL,
-  `gar_cp` VARCHAR(5) NOT NULL,
-  `gar_telephone` VARCHAR(10) NOT NULL,
-  PRIMARY KEY (`gar_id`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `vehicule`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `vehicule` (
-  `veh_immat` VARCHAR (9) NOT NULL,
-  `veh_libelle` VARCHAR(255) NOT NULL,
-  `veh_agence` INT NOT NULL,
-  `veh_etat` VARCHAR(2) NOT NULL DEFAULT 'V',
-  `veh_per` INT NULL,
-  PRIMARY KEY (`veh_immat`),
-    FOREIGN KEY (`veh_agence`)
-    REFERENCES `agence` (`age_id`),
-    FOREIGN KEY (`veh_per`)
-    REFERENCES `permis` (`per_id`))
+    	REFERENCES `motif_conge` (`mot_id`))
     
 ENGINE = InnoDB;
 
@@ -155,9 +166,9 @@ CREATE TABLE IF NOT EXISTS `immobilisation` (
   `imm_vehicule` VARCHAR (9) NOT NULL,
   PRIMARY KEY (`imm_id`),
     FOREIGN KEY (`imm_garage`)
-    REFERENCES `garage` (`gar_id`), 
+    	REFERENCES `garage` (`gar_id`), 
     FOREIGN KEY (`imm_vehicule`)
-    REFERENCES `vehicule` (`veh_immat`))
+    	REFERENCES `vehicule` (`veh_immat`))
     
 ENGINE = InnoDB;
 
@@ -171,7 +182,22 @@ CREATE TABLE IF NOT EXISTS `demenageur` (
   `dem_sal` INT NOT NULL,
   PRIMARY KEY (`dem_sal`),
     FOREIGN KEY (`dem_sal`)
-    REFERENCES `salarie` (`sal_id`))
+    	REFERENCES `salarie` (`sal_id`))
+    
+ENGINE = InnoDB;
+
+-- -----------------------------------------------------
+-- Table `obtention`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `obtention` (
+  `obt_date` DATE NOT NULL,
+  `obt_sal` INT NOT NULL,
+  `obt_permis` INT NOT NULL,
+  PRIMARY KEY (`obt_sal`, `obt_permis`),
+    FOREIGN KEY (`obt_sal`)
+    	REFERENCES `salarie` (`sal_id`),
+    FOREIGN KEY (`obt_permis`)
+    	REFERENCES `permis` (`per_id`))
     
 ENGINE = InnoDB;
 
@@ -200,37 +226,11 @@ CREATE TABLE IF NOT EXISTS `dossier_demenagement` (
   `dos_chefEquipe` INT NOT NULL,
   PRIMARY KEY (`dos_numero`),
     FOREIGN KEY (`dos_agence`)
-    REFERENCES `agence` (`age_id`),
+    	REFERENCES `agence` (`age_id`),
     FOREIGN KEY (`dos_commercial`)
-    REFERENCES `commercial` (`com_sal`),
+    	REFERENCES `commercial` (`com_sal`),
     FOREIGN KEY (`dos_chefEquipe`)
-    REFERENCES `demenageur` (`dem_sal`))
-    
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `permis`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `permis` (
-  `per_id` INT NOT NULL AUTO_INCREMENT,
-  `per_libelle` VARCHAR(4) NOT NULL,
-  PRIMARY KEY (`per_id`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `obtention`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `obtention` (
-  `obt_date` DATE NOT NULL,
-  `obt_sal` INT NOT NULL,
-  `obt_permis` INT NOT NULL,
-  PRIMARY KEY (`obt_sal`, `obt_permis`),
-    FOREIGN KEY (`obt_sal`)
-    REFERENCES `salarie` (`sal_id`),
-    FOREIGN KEY (`obt_permis`)
-    REFERENCES `permis` (`per_id`))
+    	REFERENCES `demenageur` (`dem_sal`))
     
 ENGINE = InnoDB;
 
@@ -243,9 +243,9 @@ CREATE TABLE IF NOT EXISTS `utiliser` (
   `uti_vehicule` VARCHAR (9) NOT NULL,
   PRIMARY KEY (`uti_dossier`, `uti_vehicule`),
     FOREIGN KEY (`uti_dossier`)
-    REFERENCES `dossier_demenagement` (`dos_numero`),
+    	REFERENCES `dossier_demenagement` (`dos_numero`),
     FOREIGN KEY (`uti_vehicule`)
-    REFERENCES `vehicule` (`veh_immat`))
+    	REFERENCES `vehicule` (`veh_immat`))
     
 ENGINE = InnoDB;
 
@@ -258,9 +258,9 @@ CREATE TABLE IF NOT EXISTS `participer` (
   `par_dossier` INT NOT NULL,
   PRIMARY KEY (`par_demenageur`, `par_dossier`),
     FOREIGN KEY (`par_demenageur`)
-    REFERENCES `demenageur` (`dem_sal`),
+    	REFERENCES `demenageur` (`dem_sal`),
     FOREIGN KEY (`par_dossier`)
-    REFERENCES `dossier_demenagement` (`dos_numero`))
+    	REFERENCES `dossier_demenagement` (`dos_numero`))
     
 ENGINE = InnoDB;
 

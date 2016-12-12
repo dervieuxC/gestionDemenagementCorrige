@@ -50,9 +50,14 @@ void MainWindow::on_actionQuitter_triggered()
 
 void MainWindow::on_pushButtonConnexion_clicked()
 {
+<<<<<<< HEAD
     /*
+=======
+    QString id=ui->lineEditID->text();
+    QString mdr=ui->lineEditMDP->text();
+>>>>>>> ab116adad5ebde2583c631b59f39636352fef60e
     QSqlQuery laRequete;
-    QString requeteText="select";
+    QString requeteText="select * from ";
     if(1==1)//requete renvoi salarié
     {
         DialogSalarie dialSalarie;

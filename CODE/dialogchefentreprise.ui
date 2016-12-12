@@ -1,389 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <author/>
- <comment/>
- <exportmacro/>
  <class>DialogChefEntreprise</class>
  <widget class="QDialog" name="DialogChefEntreprise">
   <property name="geometry">
-<rect>
+   <rect>
     <x>0</x>
     <y>0</y>
-    <width>926</width>
-    <height>802</height>
+    <width>828</width>
+    <height>824</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_13">
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_7">
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_11">
-        <item>
-         <layout class="QVBoxLayout" name="verticalLayout_10">
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_9">
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_6">
-              <item>
-               <layout class="QVBoxLayout" name="verticalLayout_5">
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_4">
-                  <item>
-                   <layout class="QVBoxLayout" name="verticalLayout_3">
-                    <item>
-                     <layout class="QVBoxLayout" name="verticalLayout_2">
-                      <item>
-                       <spacer name="horizontalSpacer_2">
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="sizeHint" stdset="0">
-                         <size>
-                          <width>618</width>
-                          <height>18</height>
-                         </size>
-                        </property>
-                       </spacer>
-                      </item>
-                      <item>
-                       <layout class="QHBoxLayout" name="horizontalLayout">
-                        <item>
-                         <widget class="QLabel" name="labelChefAgence">
-                          <property name="text">
-                           <string>Agence</string>
-                          </property>
-                         </widget>
-                        </item>
-                        <item>
-                         <spacer name="horizontalSpacer">
-                          <property name="orientation">
-                           <enum>Qt::Horizontal</enum>
-                          </property>
-                          <property name="sizeHint" stdset="0">
-                           <size>
-                            <width>628</width>
-                            <height>20</height>
-                           </size>
-                          </property>
-                         </spacer>
-                        </item>
-                       </layout>
-                      </item>
-                      <item>
-                       <layout class="QVBoxLayout" name="verticalLayout">
-                        <item>
-                         <widget class="QTableWidget" name="tableWidgetChefListeAgence">
-                          <column>
+  <layout class="QVBoxLayout" name="verticalLayout_14">
+   <item>
+    <widget class="QStatusBar" name="statusbar"/>
+   </item>
+   <item>
+    <widget class="QMenuBar" name="menubar">
+     <widget class="QMenu" name="menuFichier">
+      <property name="title">
+       <string>&amp;Fichier</string>
+      </property>
+      <addaction name="action_Quitter"/>
+     </widget>
+     <widget class="QMenu" name="menu_About">
+      <property name="title">
+       <string>&amp;About</string>
+      </property>
+     </widget>
+     <addaction name="menuFichier"/>
+     <addaction name="menu_About"/>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_13">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_11">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_5">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_4">
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_3">
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_2">
+                       <item>
+                        <spacer name="horizontalSpacer_2">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>618</width>
+                           <height>18</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout">
+                         <item>
+                          <widget class="QLabel" name="labelChefAgence">
                            <property name="text">
-                            <string>Nom</string>
+                            <string>Agence</string>
                            </property>
-                          </column>
-                          <column>
-                           <property name="text">
-                            <string>Adresse</string>
+                          </widget>
+                         </item>
+                         <item>
+                          <spacer name="horizontalSpacer">
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
                            </property>
-                          </column>
-                          <column>
-                           <property name="text">
-                            <string>Téléphone</string>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>628</width>
+                             <height>20</height>
+                            </size>
                            </property>
-                          </column>
-                          <column>
-                           <property name="text">
-                            <string>Fax</string>
-                           </property>
-                          </column>
-                          <column>
-                           <property name="text">
-                            <string>Mail</string>
-                           </property>
-                          </column>
-                          <column>
-                           <property name="text">
-                            <string>Chef d'agence</string>
-                           </property>
-                          </column>
-                         </widget>
-                        </item>
-                        <item>
-                         <layout class="QHBoxLayout" name="horizontalLayout_2">
-                          <item>
-                           <spacer name="horizontalSpacer_5">
-                            <property name="orientation">
-                             <enum>Qt::Horizontal</enum>
+                          </spacer>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <layout class="QVBoxLayout" name="verticalLayout">
+                         <item>
+                          <widget class="QTableWidget" name="tableWidgetChefListeAgence">
+                           <column>
+                            <property name="text">
+                             <string>Nom</string>
                             </property>
-                            <property name="sizeHint" stdset="0">
-                             <size>
-                              <width>428</width>
-                              <height>20</height>
-                             </size>
+                           </column>
+                           <column>
+                            <property name="text">
+                             <string>Adresse</string>
                             </property>
-                           </spacer>
-                          </item>
-                          <item>
-                           <layout class="QHBoxLayout" name="horizontalLayout_4">
-                            <item>
-                             <widget class="QPushButton" name="pushButtonChefAjouterAgence">
-                              <property name="text">
-                               <string>Ajouter</string>
-                              </property>
-                             </widget>
-                            </item>
-                            <item>
-                             <widget class="QPushButton" name="pushButtonChefSupprimerAgence">
-                              <property name="text">
-                               <string>Supprimer</string>
-                              </property>
-                             </widget>
-                            </item>
-                           </layout>
-                          </item>
-                         </layout>
-                        </item>
-                       </layout>
-                      </item>
-                     </layout>
-                    </item>
-                    <item>
-                     <spacer name="horizontalSpacer_3">
-                      <property name="orientation">
-                       <enum>Qt::Horizontal</enum>
-                      </property>
-                      <property name="sizeHint" stdset="0">
-                       <size>
-                        <width>678</width>
-                        <height>28</height>
-                       </size>
-                      </property>
-                     </spacer>
-                    </item>
-                   </layout>
-                  </item>
-                  <item>
-                   <spacer name="horizontalSpacer_6">
-                    <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
-                    </property>
-                    <property name="sizeHint" stdset="0">
-                     <size>
-                      <width>688</width>
-                      <height>38</height>
-                     </size>
-                    </property>
-                   </spacer>
-                  </item>
-                 </layout>
-                </item>
-                <item>
-                 <layout class="QHBoxLayout" name="horizontalLayout_3">
-                  <item>
-                   <widget class="QLabel" name="labelChefEmployesAgence">
-                    <property name="text">
-                     <string>Voir la liste des employés de l'agence:</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QComboBox" name="comboBoxChefListeAgence"/>
-                  </item>
-                  <item>
-                   <spacer name="horizontalSpacer_7">
-                    <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
-                    </property>
-                    <property name="sizeHint" stdset="0">
-                     <size>
-                      <width>298</width>
-                      <height>28</height>
-                     </size>
-                    </property>
-                   </spacer>
-                  </item>
-                 </layout>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_5">
-                <item>
-                 <widget class="QLabel" name="labelChefEmployes">
+                           </column>
+                           <column>
+                            <property name="text">
+                             <string>Téléphone</string>
+                            </property>
+                           </column>
+                           <column>
+                            <property name="text">
+                             <string>Fax</string>
+                            </property>
+                           </column>
+                           <column>
+                            <property name="text">
+                             <string>Mail</string>
+                            </property>
+                           </column>
+                           <column>
+                            <property name="text">
+                             <string>Chef d'agence</string>
+                            </property>
+                           </column>
+                          </widget>
+                         </item>
+                         <item>
+                          <layout class="QHBoxLayout" name="horizontalLayout_2">
+                           <item>
+                            <spacer name="horizontalSpacer_5">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>428</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_4">
+                             <item>
+                              <widget class="QPushButton" name="pushButtonChefAjouterAgence">
+                               <property name="text">
+                                <string>Ajouter</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QPushButton" name="pushButtonChefSupprimerAgence">
+                               <property name="text">
+                                <string>Supprimer</string>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                          </layout>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_3">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>678</width>
+                         <height>28</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_6">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>688</width>
+                       <height>38</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_3">
+                   <item>
+                    <widget class="QLabel" name="labelChefEmployesAgence">
+                     <property name="text">
+                      <string>Voir la liste des employés de l'agence:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBoxChefListeAgence"/>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_7">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>298</width>
+                       <height>28</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <widget class="QLabel" name="labelChefEmployes">
+                   <property name="text">
+                    <string>Employés</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_8">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>598</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayoutListes">
+               <item>
+                <widget class="QTableWidget" name="tableWidgetChefListeEmployes">
+                 <column>
                   <property name="text">
-                   <string>Employés</string>
+                   <string>Nom</string>
                   </property>
-                 </widget>
-                </item>
-                <item>
-                 <spacer name="horizontalSpacer_8">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Prenom</string>
                   </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>598</width>
-                    <height>20</height>
-                   </size>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Date embauche</string>
                   </property>
-                 </spacer>
-                </item>
-               </layout>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayoutListes">
-              <item>
-               <widget class="QTableWidget" name="tableWidgetChefListeEmployes">
-                <column>
-                 <property name="text">
-                  <string>Nom</string>
-                 </property>
-                </column>
-                <column>
-                 <property name="text">
-                  <string>Prenom</string>
-                 </property>
-                </column>
-                <column>
-                 <property name="text">
-                  <string>Date embauche</string>
-                 </property>
-                </column>
-                <column>
-                 <property name="text">
-                  <string>Téléphone</string>
-                 </property>
-                </column>
-                <column>
-                 <property name="text">
-                  <string>Type</string>
-                 </property>
-                </column>
-               </widget>
-              </item>
-              <item>
-               <layout class="QVBoxLayout" name="verticalLayout_8">
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_7">
-                  <item>
-                   <widget class="QPushButton" name="pushButtonChefEngager">
-                    <property name="text">
-                     <string>Engager</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QPushButton" name="pushButtonChefLicencier">
-                    <property name="text">
-                     <string>Licencier</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </item>
-                <item>
-                 <spacer name="verticalSpacer">
-                  <property name="orientation">
-                   <enum>Qt::Vertical</enum>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Téléphone</string>
                   </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>98</width>
-                    <height>118</height>
-                   </size>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Type</string>
                   </property>
-                 </spacer>
-                </item>
-               </layout>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_10">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>678</width>
-              <height>18</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <spacer name="horizontalSpacer_4">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>688</width>
-            <height>48</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_12">
-        <item>
-         <spacer name="verticalSpacer_3">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>98</width>
-            <height>698</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButtonChefQuitter">
-          <property name="text">
-           <string>Quitter</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>926</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuFichier">
-    <property name="title">
-     <string>&amp;Fichier</string>
-    </property>
-    <addaction name="action_Quitter"/>
-   </widget>
-   <widget class="QMenu" name="menu_About">
-    <property name="title">
-     <string>&amp;About</string>
-    </property>
-   </widget>
-   <addaction name="menuFichier"/>
-   <addaction name="menu_About"/>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+                 </column>
+                </widget>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_8">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_7">
+                   <item>
+                    <widget class="QPushButton" name="pushButtonChefEngager">
+                     <property name="text">
+                      <string>Engager</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButtonChefLicencier">
+                     <property name="text">
+                      <string>Licencier</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>98</width>
+                     <height>118</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>678</width>
+               <height>18</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>688</width>
+             <height>48</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_12">
+         <item>
+          <spacer name="verticalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>98</width>
+             <height>698</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonChefQuitter">
+           <property name="text">
+            <string>Quitter</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
   <action name="action_Quitter">
    <property name="text">
     <string>&amp;Quitter</string>

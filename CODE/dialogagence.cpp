@@ -13,7 +13,10 @@ DialogAgence::~DialogAgence()
     delete ui;
 }
 
+<<<<<<< HEAD
 /*
+=======
+>>>>>>> ab116adad5ebde2583c631b59f39636352fef60e
 QString DialogAgence::getNomAgence()
 {
     return ui->lineEditNomAgence->text();
@@ -34,12 +37,12 @@ QString DialogAgence::getCPAgence()
     return ui->lineEditCPAgence->text();
 }
 
-QString DialogAgence::getTelAgence()
+int DialogAgence::getTelAgence()
 {
     return ui->lineEditTelAgence->text().toInt();
 }
 
-QString DialogAgence::getFaxAgence()
+int DialogAgence::getFaxAgence()
 {
     return ui->lineEditFaxAgence->text().toInt();
 }
@@ -48,4 +51,7 @@ QString DialogAgence::getMailAgence()
 {
     return ui->lineEditMailAgence->text();
 }
+<<<<<<< HEAD
 */
+=======
+>>>>>>> ab116adad5ebde2583c631b59f39636352fef60e
