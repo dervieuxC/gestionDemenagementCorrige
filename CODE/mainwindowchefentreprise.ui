@@ -231,7 +231,7 @@
              </layout>
             </item>
             <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <layout class="QHBoxLayout" name="horizontalLayoutListes">
               <item>
                <widget class="QTableWidget" name="tableWidgetChefListeEmployes">
                 <column>
