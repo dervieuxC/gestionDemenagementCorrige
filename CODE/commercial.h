@@ -8,13 +8,16 @@
 class Commercial : public Salarie
 {
 public:
-     Commercial();
-     Commercial(int leId, QString lePrenom, QString leNom, QString lAdresse, QDate laDateNaissance, QDate laDateEmbauche, QString lExperience);
+    /**
+     * @brief Constrcteur vide
+     */
+    Commercial();
+    Commercial(int leId, QString lePrenom, QString leNom, QString lAdresse, QDate laDateNaissance, QDate laDateEmbauche, QString lExperience);
 
-     void nouveauDossier(QDate laDateDebutDem, QDate laDateFinDem, int leVolume, int leNombreKm, QString lAdresseChargement, QString lAdresseLivraison);
+    void nouveauDossier(QDate laDateDebutDem, QDate laDateFinDem, int leVolume, int leNombreKm, QString lAdresseChargement, QString lAdresseLivraison);
 
-     QString getExperience() const;
-     void setExperience(const QString &value);
+    QString getExperience() const;
+    void setExperience(const QString &value);
 
 public slots:
 private:
