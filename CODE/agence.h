@@ -148,7 +148,7 @@ public:
     /**
      * @brief Change l'adresse mail de l'agence.
      * Permet de changer la valeur de mail de l'agence courante.
-     * @param QString l'adresse de value
+     * @param QString value
      */
     void setMail(const QString &value);
 
