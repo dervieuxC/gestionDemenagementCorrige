@@ -1,7 +1,9 @@
 #ifndef DEMENAGEUR_H
 #define DEMENAGEUR_H
+#include <QVector>
 #include "salarie.h"
 #include "permis.h"
+#include "obtention.h"
 
 class Demenageur : public Salarie
 {
@@ -19,7 +21,7 @@ public:
 
 private:
      bool chef;
-     Permis* lePermis;
+     QVector<Obtention> vectObtention;
 };
 
 #endif // DEMENAGEUR_H

@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QMessageBox>
+#include <QSqlQuery>
 #include "salarie.h"
 #include "agence.h"
 #include "permis.h"
