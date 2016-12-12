@@ -14,10 +14,7 @@ class DialogAjouterEmploye : public QDialog
 public:
     explicit DialogAjouterEmploye(QWidget *parent = 0);
     ~DialogAjouterEmploye();
-<<<<<<< HEAD
-    /*
-=======
->>>>>>> ab116adad5ebde2583c631b59f39636352fef60e
+
     QString getNomEmploye();
     QString getPrenomEmploye();
     QString getRueEmploye();
@@ -27,11 +24,6 @@ public:
     QString getDateEmploye();
     QString getTypeEmploye();
     QString getLoginEmploye();
-<<<<<<< HEAD
-    */
-=======
-
->>>>>>> ab116adad5ebde2583c631b59f39636352fef60e
 
 
 private:
