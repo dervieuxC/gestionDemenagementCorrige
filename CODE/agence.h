@@ -39,8 +39,8 @@ public:
     QString getMail() const;
     void setMail(const QString &value);
 
-    QVector<Salarie> getVectSalariesAgence() const;
-    void setVectSalariesAgence(const QVector<Salarie> &value);
+    QVector<Salarie *> getVectSalariesAgence() const;
+    void setVectSalariesAgence(const QVector<Salarie *> &value);
 
     QVector<Vehicule> getVectVehiculesAgence() const;
     void setVectVehiculesAgence(const QVector<Vehicule> &value);
@@ -54,7 +54,7 @@ public:
     QVector<Immobilisation> getVectImmobilisations() const;
     void setVectImmobilisations(const QVector<Immobilisation> &value);
     Salarie* getChefAgence() const;
-    void setChefAgence(const Salarie* &value);
+    void setChefAgence(Salarie *value);
 
 
 private:
@@ -64,7 +64,7 @@ private:
     int telephone;
     int fax;
     QString mail;
-    QVector<Salarie> vectSalariesAgence;
+    QVector<Salarie*> vectSalariesAgence;
     QVector<Vehicule> vectVehiculesAgence;
     QVector<DossierDemenagement> vectDossiersDemenagement;
     QVector<Obtention> vectObtentions;

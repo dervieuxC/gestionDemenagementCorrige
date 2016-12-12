@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -18,7 +18,6 @@ SOURCES += main.cpp\
     mainwindowcommercial.cpp \
     dialogajoutdossiercommercial.cpp \
     mainwindowchef.cpp \
-    dialogagence.cpp \
     vehicule.cpp \
     salarie.cpp \
     agence.cpp \
@@ -30,7 +29,6 @@ SOURCES += main.cpp\
     garage.cpp \
     immobilisation.cpp \
     mainwindowchefentreprise.cpp \
-    vehicule.cpp \
     permis.cpp \
     obtention.cpp \
     motifconge.cpp
@@ -40,8 +38,6 @@ HEADERS  += mainwindow.h \
     mainwindowsalarie.h \
     dialogajoutdossiercommercial.h \
     mainwindowchef.h \
-    dialogagence.h \
-    vehicule.h \
     salarie.h \
     agence.h \
     arretmaladie.h \
@@ -57,13 +53,12 @@ HEADERS  += mainwindow.h \
     permis.h \
     vehicule.h
 
-FORMS    += mainwindow.ui \
+FORMS  += mainwindow.ui \
     mainwindowcommercial.ui \
     mainwindowsalarie.ui \
     dialogajoutdossiercommercial.ui \
     mainwindowchef.ui \
-    mainwindowchefentreprise.ui \
-    dialogagence.ui
+    mainwindowchefentreprise.ui
 
 RESOURCES += \
     ma_ressource.qrc

@@ -43,8 +43,8 @@ private:
  QString adresse;
  QDate dateNaissance;
  QDate dateEmbauche;
- QVector<Conge> vectConges;
- QVector<ArretMaladie> vectArretMaladies;
+ QVector<Conge*> vectConges;
+ QVector<ArretMaladie*> vectArretMaladies;
  QString etat;
 };
 

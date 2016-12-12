@@ -9,17 +9,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 }
 
-void MainWindow::on_actionQuitter_triggered()
-{
-    QMessageBox msgBox;
-    msgBox.setInformativeText("Voulez-vous vraiment quitter");
-    msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
-    msgBox.setDefaultButton(QMessageBox::No);
-    int ret = msgBox.exec();
-
-    if (ret==QMessageBox::Yes)
-        close();
-}
 
 MainWindow::~MainWindow()
 {
@@ -61,5 +50,24 @@ void MainWindow::on_actionQuitter_triggered()
 
 void MainWindow::on_pushButtonConnexion_clicked()
 {
-   //Connexion login et mot de passe
+    QSqlQuery laRequete;
+    QString requeteText="select";
+    if(1==1)//requete renvoi chef
+    {
+        MainWindowChef mainChef;
+    }
+    if(1==0)//requete renvoi chef d'entreprise
+    {
+        MainWindowChefEntreprise mainChefEntreprise;
+    }
+    if(1==0)//requete renvoi commercial
+    {
+        MainWindowCommercial mainCommercial;
+    }
+    if(1==0)//requete renvoi salarie
+    {
+        MainWindowSalarie mainSalarie;
+    }
+
+
 }

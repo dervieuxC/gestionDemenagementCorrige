@@ -14,10 +14,13 @@ INSERT INTO agence VALUES
 
 
 INSERT INTO permis VALUES
-('','A'),
+('','B1'),
 ('','B'),
 ('','C1'),
-('','B1');
+('','C'),
+('','C1E'),
+('','CE');
+
 
 INSERT INTO salarie VALUES 
 ('','1992-11-13','1962-03-14','Rue des coquelicot','La Chapelle','05800','Forestier','Pierre','D',0,'A',1,'pforestier','ini01','V', '0613594376'),
@@ -26,6 +29,7 @@ INSERT INTO salarie VALUES
 ('','1991-06-09','1961-10-05','Avenu Doloress','Saint-Bonnet', '05500','Sécurithé','Jacques','D',1,NULL,1,'sjacques','ini01','V', '0654667221');
 
 INSERT INTO obtention VALUES
+('1992-09-12',2,2),
 ('1991-02-12',1,1),
 ('1999-05-25',3,4),
 ('1997-03-30',2,3);
@@ -46,13 +50,13 @@ INSERT INTO demenageur VALUES
 (0,'B1',4);
 
 INSERT INTO vehicule VALUES
-('','gros camion', 1, 'V'),
-('','petit camion', 1, 'V'),
-('','elevateur', 1, 'V');
+('22-AYU-56','gros camion', 1, 'V',6),
+('35-DER-69','petit camion', 1, 'V',3),
+('15-CEZ-36','elevateur', 1, 'V',4);
 
 INSERT INTO immobilisation VALUES
-('','O','2016-11-30',NULL,1,1),
-('','X','1996-04-30','1996-05-15',1,3);
+('','O','2016-11-30',NULL,1,'22-AYU-56'),
+('','X','1996-04-30','1996-05-15',1,'15-CEZ-36');
 
 INSERT INTO dossier_demenagement VALUES
 ('','2 rue des alouettes', 'Gap', '05000', '1 place de la poutre','Gap','05000', '2016-12-28', '2016-12-20', '2016-12-27','2016-12-06', 'en cours', '2' , '5', 15, 1, 3, 1);
@@ -62,7 +66,7 @@ INSERT INTO participer VALUES
 (2,1);
 
 INSERT INTO utiliser VALUES
-(1,1),
-(1,2);
+(1,'22-AYU-56'),
+(1,'35-DER-69');
 
 

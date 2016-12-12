@@ -3,13 +3,15 @@
 
 #include <QMainWindow>
 #include <QMessageBox>
-<<<<<<< HEAD
+#include <QSqlQuery>
 #include "salarie.h"
 #include "agence.h"
 #include "permis.h"
 #include "garage.h"
-=======
->>>>>>> 52cfe887670317f773567bac8c2dfc7cd0ea1e17
+#include "mainwindowchef.h"
+#include "mainwindowchefentreprise.h"
+#include "mainwindowcommercial.h"
+#include "mainwindowsalarie.h"
 
 namespace Ui {
 class MainWindow;
@@ -23,9 +25,6 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     void ChargeLesSalaries();
     ~MainWindow();
-
-private slots:
-    void on_actionQuitter_triggered();
 
 
 private slots:
