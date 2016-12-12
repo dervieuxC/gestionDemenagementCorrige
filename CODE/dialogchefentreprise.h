@@ -2,7 +2,7 @@
 #define DIALOGCHEFENTREPRISE_H
 
 #include <QDialog>
-
+#include <QMessageBox>
 namespace Ui {
 class DialogChefEntreprise;
 }
@@ -14,6 +14,11 @@ class DialogChefEntreprise : public QDialog
 public:
     explicit DialogChefEntreprise(QWidget *parent = 0);
     ~DialogChefEntreprise();
+
+private slots:
+    void on_pushButtonChefQuitter_clicked();
+
+    void on_action_Quitter_triggered();
 
 private:
     Ui::DialogChefEntreprise *ui;
