@@ -89,3 +89,13 @@ void Salarie::demandeArreMaladie(int lId, QDate laDateDebut, QDate laDateFin)
     vectArretMaladies.push_back(unArretMaladie);
 }
 
+void Salarie::finConge(int lId)
+{
+    vectConges.remove(lId);
+}
+
+void Salarie::finArretMaladie(int lId)
+{
+    vectArretMaladies.remove(lId);
+}
+

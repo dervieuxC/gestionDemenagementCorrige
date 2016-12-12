@@ -6,13 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
+<<<<<<< HEAD
     <width>773</width>
     <height>916</height>
+=======
+    <width>775</width>
+    <height>953</height>
+>>>>>>> 0ad9ea924db42ebe93814070ca83045e3307c5ef
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+<<<<<<< HEAD
   <layout class="QVBoxLayout" name="verticalLayout_10">
    <item>
     <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -47,10 +53,33 @@
             <widget class="QLineEdit" name="lineEditChargementCommercial"/>
            </item>
           </layout>
+=======
+  <layout class="QVBoxLayout" name="verticalLayout_12">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_9">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="labelDateDebutCommercial">
+           <property name="text">
+            <string>Date de début :</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelChargementCommercial">
+           <property name="text">
+            <string>Adresse de chargement :</string>
+           </property>
+          </widget>
+>>>>>>> 0ad9ea924db42ebe93814070ca83045e3307c5ef
          </item>
         </layout>
        </item>
        <item>
+<<<<<<< HEAD
         <spacer name="horizontalSpacer">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
@@ -62,10 +91,39 @@
           </size>
          </property>
         </spacer>
+=======
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLineEdit" name="lineEditDateDebutCommercial"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEditChargementCommercial"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="labelDateFinCommercial">
+           <property name="text">
+            <string>Date de fin :</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEditDateFinCommercial"/>
+         </item>
+        </layout>
+>>>>>>> 0ad9ea924db42ebe93814070ca83045e3307c5ef
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
+<<<<<<< HEAD
           <layout class="QVBoxLayout" name="verticalLayout_4">
            <item>
             <widget class="QLabel" name="labelDateFinCommercial">
@@ -98,6 +156,16 @@
             <widget class="QLineEdit" name="lineEditLivraisonCommercial"/>
            </item>
           </layout>
+=======
+          <widget class="QLabel" name="labelLivraisonCommercial">
+           <property name="text">
+            <string>Adresse de livraison :</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEditLivraisonCommercial"/>
+>>>>>>> 0ad9ea924db42ebe93814070ca83045e3307c5ef
          </item>
         </layout>
        </item>
@@ -126,6 +194,7 @@
     </spacer>
    </item>
    <item>
+<<<<<<< HEAD
     <layout class="QVBoxLayout" name="verticalLayout_8">
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -178,10 +247,114 @@
        </item>
        <item>
         <widget class="QListView" name="listViewVehiculesChoisi"/>
+=======
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QLabel" name="labelVehiculesDispo">
+         <property name="text">
+          <string>Véhicule Disponibles</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListView" name="listViewVehiculesDispo"/>
        </item>
       </layout>
      </item>
      <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QPushButton" name="pushButtonUtiliser">
+         <property name="text">
+          <string>Utiliser &gt;&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonNePasUtiliser">
+         <property name="text">
+          <string>&lt;&lt; Ne pas utiliser</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QLabel" name="labelVehiculesUtilises">
+         <property name="text">
+          <string>Véhicules Utilisés</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListView" name="listViewVehiculesChoisis"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <widget class="QLabel" name="labelDemenageursDispo">
+         <property name="text">
+          <string>Déménageurs Disponibles</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListView" name="listViewDemenageursDispo"/>
+>>>>>>> 0ad9ea924db42ebe93814070ca83045e3307c5ef
+       </item>
+      </layout>
+     </item>
+     <item>
+<<<<<<< HEAD
       <spacer name="verticalSpacer_2">
        <property name="orientation">
         <enum>Qt::Vertical</enum>
@@ -190,11 +363,22 @@
         <size>
          <width>20</width>
          <height>40</height>
+=======
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+>>>>>>> 0ad9ea924db42ebe93814070ca83045e3307c5ef
         </size>
        </property>
       </spacer>
      </item>
      <item>
+<<<<<<< HEAD
       <layout class="QHBoxLayout" name="horizontalLayout_6">
        <item>
         <widget class="QListView" name="listViewDemenageurDispo"/>
@@ -357,13 +541,60 @@
        </item>
        <item>
         <widget class="QListView" name="listViewDemenageurChoisi"/>
+=======
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QPushButton" name="pushButtonChoisir">
+         <property name="text">
+          <string>Choisir &gt;&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonRetirer">
+         <property name="text">
+          <string>&lt;&lt; Retirer</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_10">
+       <item>
+        <widget class="QLabel" name="labelDemenageursChoisis">
+         <property name="text">
+          <string>Déménageurs Choisis</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListView" name="listViewDemenageursChoisis"/>
+>>>>>>> 0ad9ea924db42ebe93814070ca83045e3307c5ef
        </item>
       </layout>
      </item>
     </layout>
    </item>
    <item>
+<<<<<<< HEAD
     <layout class="QVBoxLayout" name="verticalLayout_9">
+=======
+    <layout class="QVBoxLayout" name="verticalLayout_11">
+>>>>>>> 0ad9ea924db42ebe93814070ca83045e3307c5ef
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_8">
        <item>
@@ -379,7 +610,11 @@
       </layout>
      </item>
      <item>
+<<<<<<< HEAD
       <spacer name="verticalSpacer_4">
+=======
+      <spacer name="verticalSpacer_2">
+>>>>>>> 0ad9ea924db42ebe93814070ca83045e3307c5ef
        <property name="orientation">
         <enum>Qt::Vertical</enum>
        </property>
@@ -392,7 +627,11 @@
       </spacer>
      </item>
      <item>
+<<<<<<< HEAD
       <layout class="QHBoxLayout" name="horizontalLayout_7">
+=======
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+>>>>>>> 0ad9ea924db42ebe93814070ca83045e3307c5ef
        <item>
         <widget class="QComboBox" name="comboBoxDemenageurAttribue">
          <property name="sizeIncrement">
@@ -410,6 +649,7 @@
         </widget>
        </item>
        <item>
+<<<<<<< HEAD
         <layout class="QHBoxLayout" name="horizontalLayout_4">
          <item>
           <spacer name="horizontalSpacer_6">
@@ -423,10 +663,33 @@
             </size>
            </property>
           </spacer>
+=======
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <item>
+          <widget class="QLabel" name="labelVehiculesAttribue">
+           <property name="text">
+            <string>Véhicules Utilisés</string>
+           </property>
+          </widget>
+>>>>>>> 0ad9ea924db42ebe93814070ca83045e3307c5ef
          </item>
          <item>
           <widget class="QListView" name="listViewVehiculesAttribue"/>
          </item>
+<<<<<<< HEAD
          <item>
           <spacer name="horizontalSpacer_7">
            <property name="orientation">
@@ -449,11 +712,51 @@
          </item>
         </layout>
        </item>
+=======
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_7">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonAttribuer">
+         <property name="text">
+          <string>Attribuer</string>
+         </property>
+        </widget>
+       </item>
+>>>>>>> 0ad9ea924db42ebe93814070ca83045e3307c5ef
       </layout>
      </item>
     </layout>
    </item>
    <item>
+<<<<<<< HEAD
+=======
+    <spacer name="verticalSpacer_4">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+>>>>>>> 0ad9ea924db42ebe93814070ca83045e3307c5ef
     <widget class="QDialogButtonBox" name="buttonBox">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>

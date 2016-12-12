@@ -12,7 +12,6 @@
 class Agence
 {
 public:
-    // Attribut public
 
     /**
      * @brief Constructeur vide.
