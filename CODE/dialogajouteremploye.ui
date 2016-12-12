@@ -169,7 +169,7 @@
                         </widget>
                        </item>
                        <item>
-                        <widget class="KDateWidget" name="kdatewidget"/>
+                        <widget class="KDateWidget" name="dateWidgetNaissance"/>
                        </item>
                       </layout>
                      </item>
@@ -264,7 +264,7 @@
                   <widget class="QLineEdit" name="lineEditLoginEmploye"/>
                  </item>
                  <item>
-                  <widget class="QLabel" name="label">
+                  <widget class="QLabel" name="labelCaracteresExiges">
                    <property name="font">
                     <font>
                      <family>Monospace</family>
@@ -338,7 +338,7 @@
   <zorder>lineEditNomEmploye</zorder>
   <zorder>lineEditPrenomEmploye</zorder>
   <zorder>lineEditRueEmploye</zorder>
-  <zorder>kdatewidget</zorder>
+  <zorder>dateWidgetNaissance</zorder>
   <zorder>labelTelEmploye</zorder>
   <zorder>horizontalSpacer</zorder>
   <zorder>labelRueEmploye</zorder>
@@ -351,7 +351,7 @@
   <zorder>horizontalSpacer</zorder>
   <zorder>lineEditTelEmploye</zorder>
   <zorder>lineEditLoginEmploye</zorder>
-  <zorder>label</zorder>
+  <zorder>labelCaracteresExiges</zorder>
   <zorder>verticalSpacer_3</zorder>
   <zorder>horizontalSpacer_2</zorder>
   <zorder>verticalSpacer_4</zorder>
