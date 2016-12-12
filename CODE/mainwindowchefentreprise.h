@@ -15,6 +15,11 @@ public:
     explicit MainWindowChefEntreprise(QWidget *parent = 0);
     ~MainWindowChefEntreprise();
 
+private slots:
+    void on_pushButtonChefAjouterAgence_clicked();
+
+    void on_pushButtonChefEngager_clicked();
+
 private:
     Ui::MainWindowChefEntreprise *ui;
 };
