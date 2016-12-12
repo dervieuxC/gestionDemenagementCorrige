@@ -46,10 +46,13 @@ void Agence::ajouterSalarieCommercial(int lId, QString leNom, QString lePrenom, 
 }
 
 void Agence::licencierSalarie(int lId){
-    if(lId > vectSalariesAgence.size()){
-
-    } else {
-        vectSalariesAgence.remove(lId);
+    int lesSalaries = vectSalariesAgence.size();
+    int salarieChoisis = 0;
+    while(!(lesSalaries == salarieChoisis || vectSalariesAgence[lId]->getId() == vectSalariesAgence[salarieChoisis]->getId())){
+        salarieChoisis ++;
+    }
+    if(lesSalaries != salarieChoisis && !(lesSalaries > salarieChoisis)){
+        vectSalariesAgence[lId]->setEtat("Licencié");
     }
 }
 
