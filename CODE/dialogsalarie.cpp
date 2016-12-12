@@ -12,7 +12,7 @@ DialogSalarie::~DialogSalarie()
 {
     delete ui;
 }
-void MainWindowSalarie::on_action_Quitter_triggered()
+/*void MainWindowSalarie::on_action_Quitter_triggered()
 {
     QMessageBox msgBox;
     msgBox.setInformativeText("Voulez-vous vraiment quitter");
@@ -22,4 +22,4 @@ void MainWindowSalarie::on_action_Quitter_triggered()
 
     if (ret==QMessageBox::Yes)
         close();
-}
+}*/
