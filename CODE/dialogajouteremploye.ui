@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogAjouterEmploye</class>
+ <widget class="QDialog" name="DialogAjouterEmploye">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>621</width>
+    <height>621</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_10">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_9">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <spacer name="verticalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>488</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QLabel" name="label_8">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Les informations de l'employé</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>208</width>
+               <height>18</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_5">
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_3">
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout">
+                       <item>
+                        <layout class="QVBoxLayout" name="verticalLayout_2">
+                         <item>
+                          <widget class="QLabel" name="labelNomEmploye">
+                           <property name="text">
+                            <string>Nom</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="labelPrenomEmploye">
+                           <property name="text">
+                            <string>Prenom</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="labelRueEmploye">
+                           <property name="text">
+                            <string>Rue</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="labelVilleEmploye">
+                           <property name="text">
+                            <string>Ville</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_3">
+                           <property name="text">
+                            <string>Code postal</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="labelTelEmploye">
+                           <property name="text">
+                            <string>Téléphone</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <spacer name="verticalSpacer">
+                         <property name="orientation">
+                          <enum>Qt::Vertical</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>20</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                       <item>
+                        <layout class="QVBoxLayout" name="verticalLayout">
+                         <item>
+                          <widget class="QLineEdit" name="lineEditNomEmploye"/>
+                         </item>
+                         <item>
+                          <widget class="QLineEdit" name="lineEditPrenomEmploye"/>
+                         </item>
+                         <item>
+                          <widget class="QLineEdit" name="lineEditRueEmploye"/>
+                         </item>
+                         <item>
+                          <widget class="QLineEdit" name="lineEditVilleEmploye"/>
+                         </item>
+                         <item>
+                          <widget class="QLineEdit" name="lineEditCPEmploye"/>
+                         </item>
+                         <item>
+                          <widget class="QLineEdit" name="lineEditTelEmploye"/>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_2">
+                       <item>
+                        <widget class="QLabel" name="labelDateNaissanceEmploye">
+                         <property name="text">
+                          <string>Date de naissance</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="KDateWidget" name="dateWidgetNaissance"/>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_4">
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_3">
+                       <item>
+                        <widget class="QLabel" name="labelTypeEmploye">
+                         <property name="text">
+                          <string>Type</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="verticalSpacer_2">
+                         <property name="orientation">
+                          <enum>Qt::Vertical</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>20</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                       <item>
+                        <layout class="QVBoxLayout" name="verticalLayout_4">
+                         <item>
+                          <widget class="QRadioButton" name="radioButtonDemenageur">
+                           <property name="text">
+                            <string>Démenageur</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QRadioButton" name="radioButtonCommercial">
+                           <property name="text">
+                            <string>Commercial</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>158</width>
+                         <height>68</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_3">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>88</width>
+                     <height>328</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <widget class="QLabel" name="labelLoginEmploye">
+                   <property name="text">
+                    <string>Login</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditLoginEmploye"/>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="labelCaracteresExiges">
+                   <property name="font">
+                    <font>
+                     <family>Monospace</family>
+                     <pointsize>9</pointsize>
+                     <italic>true</italic>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>min.3 caractères et aucun caractère spécial</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>488</width>
+                 <height>68</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QDialogButtonBox" name="buttonBox">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="standardButtons">
+              <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>38</width>
+         <height>518</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <zorder>buttonBox</zorder>
+  <zorder>labelNomEmploye</zorder>
+  <zorder>labelPrenomEmploye</zorder>
+  <zorder>labelDateNaissanceEmploye</zorder>
+  <zorder>labelTypeEmploye</zorder>
+  <zorder>labelLoginEmploye</zorder>
+  <zorder>label_8</zorder>
+  <zorder>lineEditNomEmploye</zorder>
+  <zorder>lineEditPrenomEmploye</zorder>
+  <zorder>lineEditRueEmploye</zorder>
+  <zorder>dateWidgetNaissance</zorder>
+  <zorder>labelTelEmploye</zorder>
+  <zorder>horizontalSpacer</zorder>
+  <zorder>labelRueEmploye</zorder>
+  <zorder>labelVilleEmploye</zorder>
+  <zorder>label_3</zorder>
+  <zorder>radioButtonDemenageur</zorder>
+  <zorder>radioButtonCommercial</zorder>
+  <zorder>lineEditVilleEmploye</zorder>
+  <zorder>lineEditCPEmploye</zorder>
+  <zorder>horizontalSpacer</zorder>
+  <zorder>lineEditTelEmploye</zorder>
+  <zorder>lineEditLoginEmploye</zorder>
+  <zorder>labelCaracteresExiges</zorder>
+  <zorder>verticalSpacer_3</zorder>
+  <zorder>horizontalSpacer_2</zorder>
+  <zorder>verticalSpacer_4</zorder>
+  <zorder>verticalSpacer_5</zorder>
+  <zorder>horizontalSpacer_3</zorder>
+  <zorder>labelPrenomEmploye</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KDateWidget</class>
+   <extends>QWidget</extends>
+   <header>kdatewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DialogAjouterEmploye</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DialogAjouterEmploye</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

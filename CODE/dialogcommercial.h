@@ -2,6 +2,7 @@
 #define DIALOGCOMMERCIAL_H
 
 #include <QDialog>
+#include <QMessageBox>
 
 namespace Ui {
 class DialogCommercial;
@@ -14,6 +15,9 @@ class DialogCommercial : public QDialog
 public:
     explicit DialogCommercial(QWidget *parent = 0);
     ~DialogCommercial();
+
+private slots:
+    void on_actionQuitter_triggered();
 
 private:
     Ui::DialogCommercial *ui;

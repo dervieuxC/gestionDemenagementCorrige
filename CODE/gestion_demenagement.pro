@@ -14,10 +14,7 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    mainwindowsalarie.cpp \
-    mainwindowcommercial.cpp \
     dialogajoutdossiercommercial.cpp \
-    mainwindowchef.cpp \
     vehicule.cpp \
     salarie.cpp \
     agence.cpp \
@@ -28,19 +25,23 @@ SOURCES += main.cpp\
     dossierdemenagement.cpp \
     garage.cpp \
     immobilisation.cpp \
-    mainwindowchefentreprise.cpp \
     permis.cpp \
     obtention.cpp \
     motifconge.cpp \
     dialogagence.cpp \
+<<<<<<< HEAD
     dialogsalarie.cpp \
     dialoggererdemenagement.cpp
+=======
+    dialogverification.cpp \
+    dialogsalarie.cpp \
+    dialogchefagence.cpp \
+    dialogchefentreprise.cpp \
+    dialogcommercial.cpp
+>>>>>>> 6a32f6099c6593bf458e85e7889efd20ae246872
 
 HEADERS  += mainwindow.h \
-    mainwindowcommercial.h \
-    mainwindowsalarie.h \
     dialogajoutdossiercommercial.h \
-    mainwindowchef.h \
     salarie.h \
     agence.h \
     arretmaladie.h \
@@ -50,24 +51,35 @@ HEADERS  += mainwindow.h \
     dossierdemenagement.h \
     garage.h \
     immobilisation.h \
-    mainwindowchefentreprise.h \
     motifconge.h \
     obtention.h \
     permis.h \
     vehicule.h \
     dialogagence.h \
+<<<<<<< HEAD
     dialogsalarie.h \
     dialoggererdemenagement.h
+=======
+    dialogverification.h \
+    dialogsalarie.h \
+    dialogchefagence.h \
+    dialogchefentreprise.h \
+    dialogcommercial.h
+>>>>>>> 6a32f6099c6593bf458e85e7889efd20ae246872
 
 FORMS  += mainwindow.ui \
-    mainwindowcommercial.ui \
-    mainwindowsalarie.ui \
     dialogajoutdossiercommercial.ui \
-    mainwindowchef.ui \
-    mainwindowchefentreprise.ui \
     dialogagence.ui \
+<<<<<<< HEAD
     dialogsalarie.ui \
     dialoggererdemenagement.ui
+=======
+    dialogverification.ui \
+    dialogsalarie.ui \
+    dialogchefagence.ui \
+    dialogchefentreprise.ui \
+    dialogcommercial.ui
+>>>>>>> 6a32f6099c6593bf458e85e7889efd20ae246872
 
 RESOURCES += \
     ma_ressource.qrc

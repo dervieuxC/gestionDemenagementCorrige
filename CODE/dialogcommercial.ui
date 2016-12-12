@@ -18,7 +18,7 @@
     <widget class="QMenuBar" name="menubar">
      <widget class="QMenu" name="menuFichier">
       <property name="title">
-       <string>Fichier</string>
+       <string>&amp;Fichier</string>
       </property>
       <addaction name="actionQuitter"/>
      </widget>
@@ -112,7 +112,7 @@
   </layout>
   <action name="actionQuitter">
    <property name="text">
-    <string>Quitter</string>
+    <string>&amp;Quitter</string>
    </property>
   </action>
  </widget>
