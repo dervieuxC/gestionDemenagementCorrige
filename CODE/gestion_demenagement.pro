@@ -14,10 +14,7 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    mainwindowsalarie.cpp \
-    mainwindowcommercial.cpp \
     dialogajoutdossiercommercial.cpp \
-    mainwindowchef.cpp \
     vehicule.cpp \
     salarie.cpp \
     agence.cpp \
@@ -28,7 +25,6 @@ SOURCES += main.cpp\
     dossierdemenagement.cpp \
     garage.cpp \
     immobilisation.cpp \
-    mainwindowchefentreprise.cpp \
     permis.cpp \
     obtention.cpp \
     motifconge.cpp \
@@ -40,10 +36,7 @@ SOURCES += main.cpp\
     dialogcommercial.cpp
 
 HEADERS  += mainwindow.h \
-    mainwindowcommercial.h \
-    mainwindowsalarie.h \
     dialogajoutdossiercommercial.h \
-    mainwindowchef.h \
     salarie.h \
     agence.h \
     arretmaladie.h \
@@ -53,7 +46,6 @@ HEADERS  += mainwindow.h \
     dossierdemenagement.h \
     garage.h \
     immobilisation.h \
-    mainwindowchefentreprise.h \
     motifconge.h \
     obtention.h \
     permis.h \
@@ -66,11 +58,7 @@ HEADERS  += mainwindow.h \
     dialogcommercial.h
 
 FORMS  += mainwindow.ui \
-    mainwindowcommercial.ui \
-    mainwindowsalarie.ui \
     dialogajoutdossiercommercial.ui \
-    mainwindowchef.ui \
-    mainwindowchefentreprise.ui \
     dialogagence.ui \
     dialogverification.ui \
     dialogsalarie.ui \
