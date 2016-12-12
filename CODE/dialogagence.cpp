@@ -13,14 +13,28 @@ DialogAgence::~DialogAgence()
     delete ui;
 }
 
+<<<<<<< HEAD
+/*
+=======
+>>>>>>> ab116adad5ebde2583c631b59f39636352fef60e
 QString DialogAgence::getNomAgence()
 {
     return ui->lineEditNomAgence->text();
 }
 
-QString DialogAgence::getAdresseAgence()
+QString DialogAgence::getRueAgence()
 {
-    return ui->lineEditAdresseAgence->text();
+    return ui->lineEditRueAgence->text();
+}
+
+QString DialogAgence::getVilleAgence()
+{
+    return ui->lineEditVilleAgence->text();
+}
+
+QString DialogAgence::getCPAgence()
+{
+    return ui->lineEditCPAgence->text();
 }
 
 int DialogAgence::getTelAgence()
@@ -37,3 +51,7 @@ QString DialogAgence::getMailAgence()
 {
     return ui->lineEditMailAgence->text();
 }
+<<<<<<< HEAD
+*/
+=======
+>>>>>>> ab116adad5ebde2583c631b59f39636352fef60e
