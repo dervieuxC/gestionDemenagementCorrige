@@ -52,30 +52,28 @@ void MainWindow::on_pushButtonConnexion_clicked()
 {
     QSqlQuery laRequete;
     QString requeteText="select";
-    if(1==1)//requete renvoi chef
+    if(1==1)//requete renvoi salarié
     {
         DialogSalarie dialSalarie;
         if (dialSalarie.exec() ==QDialog::Accepted)
         {}
     }
-    /*if(1==0)//requete renvoi chef d'entreprise
+    if(1==1)//requete renvoi chef d'agence
     {
-        MainWindowChefEntreprise mainChefEntreprise;
-        //if (mainChefEntreprise.exec() ==QDialog::Accepted)
-        //{}
-    }
-    if(1==0)//requete renvoi commercial
-    {
-        MainWindowCommercial mainCommercial;
-        if (mainCommercial.exec() ==QDialog::Accepted)
+        DialogChefAgence dialChefAgence;
+        if (dialChefAgence.exec() ==QDialog::Accepted)
         {}
     }
-    if(1==0)//requete renvoi salarie
+    if(1==1)//requete renvoi chef d'entreprise
     {
-        MainWindowSalarie mainSalarie;
-        //if (mainSalarie.exec() ==QDialog::Accepted)
-        //{}
-    }*/
-
-
+        DialogChefEntreprise dialChefEntreprise;
+        if (dialChefEntreprise.exec() ==QDialog::Accepted)
+        {}
+    }
+    if(1==1)//requete renvoi commercial
+    {
+        DialogCommercial dialCommercial;
+        if (dialCommercial.exec() ==QDialog::Accepted)
+        {}
+    }
 }
