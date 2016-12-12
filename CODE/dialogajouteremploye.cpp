@@ -13,7 +13,7 @@ DialogAjouterEmploye::~DialogAjouterEmploye()
     delete ui;
 }
 
-
+/*
 // modif apti
 QString DialogAjouterEmploye::getNomEmploye()
 {
@@ -45,10 +45,6 @@ QString DialogAjouterEmploye::getTelEmploye()
     return ui->lineEditTelEmploye->text();
 }
 
-QString DialogAjouterEmploye::getDateNaissanceEmploye()
-{
-    return ui->dateWidgetNaissance->text();
-}
 
 QString DialogAjouterEmploye::getTypeEmploye()
 {
@@ -61,4 +57,4 @@ QString DialogAjouterEmploye::getLoginEmploye()
 }
 
 
-
+*/

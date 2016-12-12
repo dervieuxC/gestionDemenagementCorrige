@@ -169,7 +169,18 @@
                         </widget>
                        </item>
                        <item>
-                        <widget class="KDateWidget" name="dateWidgetNaissance"/>
+                        <widget class="QLineEdit" name="lineEdit">
+                         <property name="inputMask">
+                          <string>9999-99-99; </string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label">
+                         <property name="text">
+                          <string>aaaa-mm-jj   </string>
+                         </property>
+                        </widget>
                        </item>
                       </layout>
                      </item>
@@ -328,44 +339,7 @@
     </layout>
    </item>
   </layout>
-  <zorder>buttonBox</zorder>
-  <zorder>labelNomEmploye</zorder>
-  <zorder>labelPrenomEmploye</zorder>
-  <zorder>labelDateNaissanceEmploye</zorder>
-  <zorder>labelTypeEmploye</zorder>
-  <zorder>labelLoginEmploye</zorder>
-  <zorder>label_8</zorder>
-  <zorder>lineEditNomEmploye</zorder>
-  <zorder>lineEditPrenomEmploye</zorder>
-  <zorder>lineEditRueEmploye</zorder>
-  <zorder>dateWidgetNaissance</zorder>
-  <zorder>labelTelEmploye</zorder>
-  <zorder>horizontalSpacer</zorder>
-  <zorder>labelRueEmploye</zorder>
-  <zorder>labelVilleEmploye</zorder>
-  <zorder>label_3</zorder>
-  <zorder>radioButtonDemenageur</zorder>
-  <zorder>radioButtonCommercial</zorder>
-  <zorder>lineEditVilleEmploye</zorder>
-  <zorder>lineEditCPEmploye</zorder>
-  <zorder>horizontalSpacer</zorder>
-  <zorder>lineEditTelEmploye</zorder>
-  <zorder>lineEditLoginEmploye</zorder>
-  <zorder>labelCaracteresExiges</zorder>
-  <zorder>verticalSpacer_3</zorder>
-  <zorder>horizontalSpacer_2</zorder>
-  <zorder>verticalSpacer_4</zorder>
-  <zorder>verticalSpacer_5</zorder>
-  <zorder>horizontalSpacer_3</zorder>
-  <zorder>labelPrenomEmploye</zorder>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>KDateWidget</class>
-   <extends>QWidget</extends>
-   <header>kdatewidget.h</header>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections>
   <connection>
