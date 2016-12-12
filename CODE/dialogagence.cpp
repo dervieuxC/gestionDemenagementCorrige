@@ -13,7 +13,7 @@ DialogAgence::~DialogAgence()
     delete ui;
 }
 
-QString DialogAgence::getNomAgence()
+/**QString DialogAgence::getNomAgence()
 {
     return ui->lineEditNomAgence->text();
 }
@@ -25,15 +25,15 @@ QString DialogAgence::getAdresseAgence()
 
 QString DialogAgence::getTelAgence()
 {
-    return ui->lineEditTelAgence->text();
+    return ui->lineEditTelAgence->text().toInt();
 }
 
 QString DialogAgence::getFaxAgence()
 {
-    return ui->lineEditFaxAgence->text();
+    return ui->lineEditFaxAgence->text().toInt();
 }
 
 QString DialogAgence::getMailAgence()
 {
     return ui->lineEditMailAgence->text();
-}
+}*/
