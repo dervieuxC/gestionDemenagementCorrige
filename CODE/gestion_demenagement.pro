@@ -34,7 +34,9 @@ SOURCES += main.cpp\
     motifconge.cpp \
     dialogagence.cpp \
     dialogsalarie.cpp \
-    dialogverification.cpp
+    dialogverification.cpp \
+    dialogajouteremploye.cpp \
+    dialogajoutarretmaladie.cpp
 
 HEADERS  += mainwindow.h \
     mainwindowcommercial.h \
@@ -57,7 +59,9 @@ HEADERS  += mainwindow.h \
     vehicule.h \
     dialogagence.h \
     dialogsalarie.h \
-    dialogverification.h
+    dialogverification.h \
+    dialogajouteremploye.h \
+    dialogajoutarretmaladie.h
 
 FORMS  += mainwindow.ui \
     mainwindowcommercial.ui \
@@ -67,7 +71,9 @@ FORMS  += mainwindow.ui \
     mainwindowchefentreprise.ui \
     dialogagence.ui \
     dialogsalarie.ui \
-    dialogverification.ui
+    dialogverification.ui \
+    dialogajouteremploye.ui \
+    dialogajoutarretmaladie.ui
 
 RESOURCES += \
     ma_ressource.qrc

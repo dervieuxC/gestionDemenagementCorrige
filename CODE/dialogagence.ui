@@ -13,46 +13,46 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_7">
+  <layout class="QVBoxLayout" name="verticalLayout_6">
    <item>
-    <layout class="QVBoxLayout" name="verticalLayout_6">
+    <layout class="QVBoxLayout" name="verticalLayout_5">
      <item>
-      <layout class="QVBoxLayout" name="verticalLayout_5">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
          <item>
-          <layout class="QVBoxLayout" name="verticalLayout_4">
+          <layout class="QVBoxLayout" name="verticalLayout_3">
            <item>
-            <layout class="QVBoxLayout" name="verticalLayout_3">
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_2">
-               <item>
-                <widget class="QLabel" name="labelAjoutAgence">
-                 <property name="font">
-                  <font>
-                   <pointsize>14</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>Ajout un agence</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <spacer name="horizontalSpacer">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>228</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                </spacer>
-               </item>
-              </layout>
+              <widget class="QLabel" name="labelAjoutAgence">
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Ajout un agence</string>
+               </property>
+              </widget>
              </item>
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>228</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout">
                <item>
@@ -67,7 +67,21 @@
                  <item>
                   <widget class="QLabel" name="labelAdresseAgence">
                    <property name="text">
-                    <string>Adresse</string>
+                    <string>Rue</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="labelVilleAgence">
+                   <property name="text">
+                    <string>Ville</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="labelCPAgence">
+                   <property name="text">
+                    <string>Code postal</string>
                    </property>
                   </widget>
                  </item>
@@ -100,7 +114,13 @@
                   <widget class="QLineEdit" name="lineEditNomAgence"/>
                  </item>
                  <item>
-                  <widget class="QLineEdit" name="lineEditAdresseAgence"/>
+                  <widget class="QLineEdit" name="lineEditRueAgence"/>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditVilleAgence"/>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditCPAgence"/>
                  </item>
                  <item>
                   <widget class="QLineEdit" name="lineEditTelAgence"/>
@@ -115,50 +135,67 @@
                </item>
               </layout>
              </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <spacer name="verticalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>38</width>
+                   <height>258</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>38</width>
+                   <height>248</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
             </layout>
-           </item>
-           <item>
-            <spacer name="horizontalSpacer_2">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>358</width>
-               <height>28</height>
-              </size>
-             </property>
-            </spacer>
            </item>
           </layout>
          </item>
          <item>
-          <spacer name="verticalSpacer">
+          <spacer name="verticalSpacer_3">
            <property name="orientation">
             <enum>Qt::Vertical</enum>
            </property>
            <property name="sizeHint" stdset="0">
             <size>
-             <width>38</width>
-             <height>258</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item>
-          <spacer name="verticalSpacer_2">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>38</width>
+             <width>88</width>
              <height>248</height>
             </size>
            </property>
           </spacer>
          </item>
         </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>438</width>
+           <height>38</height>
+          </size>
+         </property>
+        </spacer>
        </item>
       </layout>
      </item>
@@ -175,6 +212,13 @@
     </layout>
    </item>
   </layout>
+  <zorder>labelVilleAgence</zorder>
+  <zorder>labelCPAgence</zorder>
+  <zorder>lineEditCPAgence</zorder>
+  <zorder>lineEditVilleAgence</zorder>
+  <zorder>labelMailAgence</zorder>
+  <zorder>horizontalSpacer_2</zorder>
+  <zorder>verticalSpacer_3</zorder>
  </widget>
  <resources/>
  <connections>

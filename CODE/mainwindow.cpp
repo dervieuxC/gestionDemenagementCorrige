@@ -50,6 +50,7 @@ void MainWindow::on_actionQuitter_triggered()
 
 void MainWindow::on_pushButtonConnexion_clicked()
 {
+    /*
     QSqlQuery laRequete;
     QString requeteText="select";
     if(1==1)//requete renvoi salarié
@@ -76,4 +77,5 @@ void MainWindow::on_pushButtonConnexion_clicked()
         if (dialCommercial.exec() ==QDialog::Accepted)
         {}
     }
+    */
 }

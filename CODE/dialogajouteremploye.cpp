@@ -13,7 +13,7 @@ DialogAjouterEmploye::~DialogAjouterEmploye()
     delete ui;
 }
 
-
+/*
 // modif apti
 QString DialogAjouterEmploye::getNomEmploye()
 {
@@ -61,4 +61,4 @@ QString DialogAjouterEmploye::getLoginEmploye()
 }
 
 
-
+*/
