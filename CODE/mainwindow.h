@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include <QSqlQuery>
+#include <QDebug>
 #include "salarie.h"
 #include "agence.h"
 #include "permis.h"
@@ -12,6 +13,7 @@
 #include "mainwindowchefentreprise.h"
 #include "mainwindowcommercial.h"
 #include "mainwindowsalarie.h"
+#include "dialogsalarie.h"
 
 namespace Ui {
 class MainWindow;
