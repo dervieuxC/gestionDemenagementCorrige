@@ -37,8 +37,3 @@ QString DialogAjoutDossierCommercial::getChefEquipe()
 {
     return ui->comboBoxChefEquipe->currentText();
 }
-
-QString DialogAjoutDossierCommercial::getAgence()
-{
-    return ui->lineEditAgenceCommercial->text();
-}
