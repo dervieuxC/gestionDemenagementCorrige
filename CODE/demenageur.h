@@ -21,7 +21,7 @@ public:
 
 private:
      bool chef;
-     QVector<Obtention> vectObtention;
+ //    QVector<Obtention> vectObtention;
 };
 
 #endif // DEMENAGEUR_H
