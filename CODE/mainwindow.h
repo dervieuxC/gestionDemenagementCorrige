@@ -9,11 +9,10 @@
 #include "agence.h"
 #include "permis.h"
 #include "garage.h"
-#include "mainwindowchef.h"
-#include "mainwindowchefentreprise.h"
-#include "mainwindowcommercial.h"
-#include "mainwindowsalarie.h"
 #include "dialogsalarie.h"
+#include "dialogchefentreprise.h"
+#include "dialogchefagence.h"
+#include "dialogcommercial.h"
 
 namespace Ui {
 class MainWindow;
