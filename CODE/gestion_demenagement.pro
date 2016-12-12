@@ -29,11 +29,16 @@ SOURCES += main.cpp\
     obtention.cpp \
     motifconge.cpp \
     dialogagence.cpp \
+<<<<<<< HEAD
+    dialogsalarie.cpp \
+    dialoggererdemenagement.cpp
+=======
     dialogverification.cpp \
     dialogsalarie.cpp \
     dialogchefagence.cpp \
     dialogchefentreprise.cpp \
     dialogcommercial.cpp
+>>>>>>> 6a32f6099c6593bf458e85e7889efd20ae246872
 
 HEADERS  += mainwindow.h \
     dialogajoutdossiercommercial.h \
@@ -51,20 +56,30 @@ HEADERS  += mainwindow.h \
     permis.h \
     vehicule.h \
     dialogagence.h \
+<<<<<<< HEAD
+    dialogsalarie.h \
+    dialoggererdemenagement.h
+=======
     dialogverification.h \
     dialogsalarie.h \
     dialogchefagence.h \
     dialogchefentreprise.h \
     dialogcommercial.h
+>>>>>>> 6a32f6099c6593bf458e85e7889efd20ae246872
 
 FORMS  += mainwindow.ui \
     dialogajoutdossiercommercial.ui \
     dialogagence.ui \
+<<<<<<< HEAD
+    dialogsalarie.ui \
+    dialoggererdemenagement.ui
+=======
     dialogverification.ui \
     dialogsalarie.ui \
     dialogchefagence.ui \
     dialogchefentreprise.ui \
     dialogcommercial.ui
+>>>>>>> 6a32f6099c6593bf458e85e7889efd20ae246872
 
 RESOURCES += \
     ma_ressource.qrc
