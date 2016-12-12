@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>682</width>
-    <height>409</height>
+    <width>728</width>
+    <height>390</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,33 +17,9 @@
    <bool>true</bool>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QVBoxLayout" name="verticalLayout_5">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
     <item>
-     <layout class="QFormLayout" name="formLayout">
-      <item row="0" column="0">
-       <widget class="QLabel" name="label">
-        <property name="text">
-         <string>Identifiant :</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QLineEdit" name="lineEditID"/>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="labelMDP">
-        <property name="text">
-         <string>Mot de Passe : </string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QLineEdit" name="lineEditMDP"/>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QVBoxLayout" name="verticalLayout_4">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
        <spacer name="horizontalSpacer">
         <property name="orientation">
@@ -58,7 +34,7 @@
        </spacer>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
          <spacer name="horizontalSpacer_4">
           <property name="orientation">
@@ -73,49 +49,37 @@
          </spacer>
         </item>
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_3">
+         <layout class="QVBoxLayout" name="verticalLayout">
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout">
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout">
-              <item>
-               <widget class="QLabel" name="label">
-                <property name="text">
-                 <string>Login : </string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="labelMDP">
-                <property name="text">
-                 <string>Mot de Passe : </string>
-                </property>
-               </widget>
-              </item>
-             </layout>
+           <layout class="QFormLayout" name="formLayout">
+            <item row="0" column="0">
+             <widget class="QLabel" name="labelID">
+              <property name="text">
+               <string>Identifiant :</string>
+              </property>
+             </widget>
             </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_2">
-              <item>
-               <widget class="QLineEdit" name="lineEdit"/>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="lineEditMDP"/>
-              </item>
-             </layout>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="lineEditID"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="labelMDP">
+              <property name="text">
+               <string>Mot de Passe : </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="lineEditMDP"/>
             </item>
            </layout>
           </item>
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_2">
-            <item>
-             <widget class="QPushButton" name="pushButtonConnexion">
-              <property name="text">
-               <string>&amp;Connexion</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
+           <widget class="QPushButton" name="pushButtonConnexion">
+            <property name="text">
+             <string>&amp;Connexion</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
@@ -156,8 +120,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>682</width>
-     <height>29</height>
+     <width>728</width>
+     <height>27</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFichier">
