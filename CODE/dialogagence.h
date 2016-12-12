@@ -16,8 +16,8 @@ public:
     ~DialogAgence();
     QString getNomAgence;
     QString getAdresseAgence;
-    int getTelAgence;
-    int getFaxAgence;
+    QString getTelAgence;
+    QString getFaxAgence;
     QString getMailAgence;
 private:
     Ui::DialogAgence *ui;
