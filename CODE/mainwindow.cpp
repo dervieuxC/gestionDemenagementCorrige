@@ -14,7 +14,70 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
-
+void MainWindow::chargerPermis()
+{
+    QSqlQuery laRequete("select * from permis order by per_id asc;");
+    while (laRequete.next())
+    {
+        int id=laRequete.value(0).toInt();
+        QString libelle=laRequete.value(1).toString();
+        Permis newPermis(id,libelle);
+        vectPermis.push_back(newPermis);
+    }
+}
+void MainWindow::AjouterPermis(int idPermis, QString libellePermis)
+{
+    QSqlQuery reqAjouterPermis;
+        QString requeteText="insert into contact values ('";
+        requeteText+=QString::number(idPermis);
+        requeteText+="','";
+        requeteText+=libellePermis;
+        requeteText+="');";
+        qDebug() << requeteText << endl;
+        reqAjouterPermis.exec(requeteText);
+}
+void MainWindow::chargerAgences()
+{
+    QSqlQuery laRequete("select * from agence order by age_id asc;");
+    while (laRequete.next())
+    {
+        //int id=laRequete.value(0).toInt();
+        Agence newAgence();//a remplir
+        //vectAgence.push_back(newAgence);
+    }
+}
+void MainWindow::AjouterAgence(int idAgence)
+{
+    QSqlQuery reqAjouterAgence;
+        /*QString requeteText="insert into agence values ('";
+        requeteText+=QString::number(idAgence);
+        requeteText+="','";
+        requeteText+=libellePermis;
+        requeteText+="');";
+        qDebug() << requeteText << endl;*/
+        //reqAjouterAgence.exec(requeteText);
+}
+void MainWindow::chargerSalaries()
+{
+    QSqlQuery laRequete("select * from salarie order by sal_id asc;");
+    while (laRequete.next())
+    {
+        int id=laRequete.value(0).toInt();
+        Salarie newSalarie();//a remplir
+        //vectSalarie.push_back(newSalarie);
+    }
+}
+void MainWindow::AjouterSalarie(int idSalarie)
+{
+    QSqlQuery reqAjouterSalarie;
+        /*QString requeteText="insert into agence values ('";
+        requeteText+=QString::number(idAgence);
+        requeteText+="','";
+        requeteText+=libellePermis;
+        requeteText+="');";
+        qDebug() << requeteText << endl;*/
+        //reqAjouterSalarie.exec(requeteText);
+}
 void MainWindow::on_actionQuitter_triggered()
 {
     QMessageBox msgBox;

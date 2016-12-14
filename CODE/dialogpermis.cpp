@@ -31,6 +31,3 @@ void DialogPermis::on_comboBoxPermis_currentTextChanged(const QString &arg1)
 {
     activatedOkButton();
 }
-DialogPermis::chargerPermis(){
-
-}

@@ -29,6 +29,7 @@ public:
     ~MainWindow();
 
 
+
 private slots:
     void on_actionQuitter_triggered();
 
@@ -40,6 +41,12 @@ private:
     QVector<Salarie> vectSalarie;
     QVector<Permis> vectPermis;
     Agence agenceChoisis;
+    void chargerPermis();
+    void chargerAgences();
+    void chargerSalaries();
+    void AjouterPermis(int idPermis, QString libellePermis);
+    void AjouterSalarie(int idSalarie);
+    void AjouterAgence(int idAgence);
 };
 
 #endif // MAINWINDOW_H
