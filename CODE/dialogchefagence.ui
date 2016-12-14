@@ -144,6 +144,11 @@
                    <string>N° de portable</string>
                   </property>
                  </column>
+                 <column>
+                  <property name="text">
+                   <string>Etat</string>
+                  </property>
+                 </column>
                 </widget>
                </item>
               </layout>
