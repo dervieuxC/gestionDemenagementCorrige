@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1116</width>
-    <height>628</height>
+    <width>953</width>
+    <height>562</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -271,7 +271,7 @@
              <item>
               <widget class="QLineEdit" name="lineEditDateDebut">
                <property name="inputMask">
-                <string>9999-99-99 ; </string>
+                <string>9999-99-99 </string>
                </property>
               </widget>
              </item>
@@ -289,7 +289,7 @@
              <item>
               <widget class="QLineEdit" name="lineEditDateFin">
                <property name="inputMask">
-                <string>9999-99-99; </string>
+                <string>9999-99-99</string>
                </property>
               </widget>
              </item>
