@@ -27,58 +27,48 @@ void MainWindow::on_actionQuitter_triggered()
     close();
 }
 
-/*void MainWindow::ChargeLesSalaries()
-{
-    QSqlQuery reqSalarie("select * from Salarie");
-            while (reqSalarie.next())
-            {
-                QString sid = reqSalarie.value(0).toString();
-                QString snom = reqSalarie.value(1).toString();
-                QString sprenom = reqSalarie.value(2).toString();
-                QString sdaten = reqSalarie.value(3).toString();
-                QString FinalC = cid + " - " + cnom + " " + cprenom;
-                ui->comboBoxAfficher->addItem(FinalC);
-                Salarie newSalarie;
-                newSalarie.setId(cid);
-                newSalarie.setNom(cnom);
-                newSalarie.setPrenom(cprenom);
-                newSalarie.set();
-                newSalarie.set();
-                vectSalarie.push_back(newsalarie);
-
-}*/
-
 void MainWindow::on_pushButtonConnexion_clicked()
 {
 
 
     QString id=ui->lineEditID->text();
-    QString mdr=ui->lineEditMDP->text();
+    QString mdp=ui->lineEditMDP->text();
     QSqlQuery laRequete;
-    QString requeteText="select * from ";
-    if(1==1)//requete renvoi salarié
-    {
-        DialogSalarie dialSalarie;
-        if (dialSalarie.exec() ==QDialog::Accepted)
-        {}
+    QString requeteText="select * from salarie where sal_login=";
+    requeteText+="'"+id+"'";
+    requeteText+=" and sal_mdp=";
+    requeteText+="'"+mdp+"';";
+    qDebug() << requeteText << endl;
+    if (laRequete.exec(requeteText)){
+            laRequete.next();
+            QString type=laRequete.value(8).toString();
+            qDebug() << type << endl;
+        if(type=="D")//requete renvoi salarié
+        {
+            DialogSalarie dialSalarie;
+            if (dialSalarie.exec() ==QDialog::Accepted)
+            {}
+        }
+        if(type=="CA")//requete renvoi chef d'agence
+        {
+            DialogChefAgence dialChefAgence;
+            if (dialChefAgence.exec() ==QDialog::Accepted)
+            {}
+        }
+        if(type=="CE")//requete renvoi chef d'entreprise
+        {
+            DialogChefEntreprise dialChefEntreprise;
+            if (dialChefEntreprise.exec() ==QDialog::Accepted)
+            {}
+        }
+        if(type=="C")//requete renvoi commercial
+        {
+            DialogCommercial dialCommercial;
+            if (dialCommercial.exec() ==QDialog::Accepted)
+            {}
+        }
     }
-    if(1==1)//requete renvoi chef d'agence
-    {
-        DialogChefAgence dialChefAgence;
-        if (dialChefAgence.exec() ==QDialog::Accepted)
-        {}
-    }
-    if(1==1)//requete renvoi chef d'entreprise
-    {
-        DialogChefEntreprise dialChefEntreprise;
-        if (dialChefEntreprise.exec() ==QDialog::Accepted)
-        {}
-    }
-    if(1==1)//requete renvoi commercial
-    {
-        DialogCommercial dialCommercial;
-        if (dialCommercial.exec() ==QDialog::Accepted)
-        {}
-    }
+
+
 
 }
