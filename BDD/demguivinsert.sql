@@ -34,7 +34,7 @@ INSERT INTO salarie VALUES
 ('','1981-01-13','1962-03-14','Rue des coquelicot','La Chapelle','05800','Forestier','Pierre','D',0,'A','pforestier','ini04','V', '0613594376','0','30',1),
 ('','1982-02-14','1975-01-12','Impasse des 3 chemins','Gap','05000','DesChamps','Francois','D',0,'B','fdeschamps','ini5','V','0664872195','0','30',1),
 ('','1984-05-09','1961-10-05','Avenu Doloress','Saint-Bonnet', '05500','Sécurithé','Jacques','D',1,NULL,'sjacques','ini06','R', '0654667221','0','30',1),
-('','1990-01-20','1970-03-21','Rue du bidet','Gap', '05000','Pascal','Pascalle','C',0,'A','ppascalle','ini07','V','0664225346','0','30',1);
+('','1990-01-20','1970-03-21','Rue du bidet','Gap', '05000','Pascal','Pascalle','C',0,'A','ppascalle','ini07','V','0664225346','0','30',1),
 ('','1990-02-25','1975-03-21','Rue du lavabot','Saint-Bonnet', '05500','Pierette','Pascalle','C',0,'A','ppascalle','ini08','L','0664225346','0','30',1);
 
 
@@ -42,19 +42,19 @@ INSERT INTO vehicule VALUES
 ('22-AYU-56','voiture',20,'V',1,1),
 ('35-DER-69','camionette',40,'V',1,2),
 ('15-CEZ-36','camion',80,'V',1,3),
-('45-CCR-56','moyen camion',160,'V',1,4);
-('95-CEC-96','gros camion',320,'V',1,5);
-('12-CER-96','tres gros camion','640','V',1,6);
+('45-CCR-56','moyen camion',160,'V',1,4),
+('95-CEC-96','gros camion',320,'V',1,5),
+('12-CER-96','tres gros camion','640','V',1,6),
 ('20-AYU-56','voiture',20,'O',1,1),
 ('33-DER-69','camionette',40,'O',1,2),
 ('10-CEZ-36','camion',80,'X',1,3),
-('95-COR-56','moyen camion',160,'X',1,4);
-('99-OEC-96','gros camion',320,'X',1,5);
+('95-COR-56','moyen camion',160,'X',1,4),
+('99-OEC-96','gros camion',320,'X',1,5),
 ('12-CEO-96','tres gros camion','640','X',1,6);
 
 
 INSERT INTO arret_maladie VALUES
-('','2015-02-10','2015-06-05',	NULL,5);
+('','2015-02-10','2015-06-05',	NULL,5),
 ('','2015-02-10','2015-06-05',	NULL,6);
 
 
