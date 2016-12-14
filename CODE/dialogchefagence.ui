@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1122</width>
-    <height>742</height>
+    <width>1215</width>
+    <height>782</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Gestion de l'agence</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_10">
    <item>
@@ -79,17 +79,38 @@
                   </widget>
                  </item>
                  <item>
-                  <spacer name="horizontalSpacer">
-                   <property name="orientation">
-                    <enum>Qt::Horizontal</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>208</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                  </spacer>
+                  <widget class="QComboBox" name="comboBox">
+                   <item>
+                    <property name="text">
+                     <string>présents</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>malades</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>licenciers</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>en retraite </string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>en congé</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>absents</string>
+                    </property>
+                   </item>
+                  </widget>
                  </item>
                  <item>
                   <widget class="QComboBox" name="comboBoxTrierEmployes">
@@ -100,12 +121,12 @@
                    </item>
                    <item>
                     <property name="text">
-                     <string>Salaries</string>
+                     <string>salaries</string>
                     </property>
                    </item>
                    <item>
                     <property name="text">
-                     <string>Commerciales</string>
+                     <string>commerciales</string>
                     </property>
                    </item>
                   </widget>
@@ -217,6 +238,45 @@
                    </property>
                   </spacer>
                  </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_2">
+                   <item>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>en cours</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>en attente</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>finis</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>validés</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>refusés</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>clôturés</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
                 </layout>
                </item>
                <item>
@@ -244,6 +304,11 @@
                  <column>
                   <property name="text">
                    <string>Mail</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Etat</string>
                   </property>
                  </column>
                 </widget>

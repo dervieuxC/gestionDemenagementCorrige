@@ -19,6 +19,10 @@ public:
 private slots:
     void on_pushButtonQuitter_clicked();
 
+    void on_pushButtonAjouterEmploye_clicked();
+
+    void on_pushButtonLicencierEmploye_clicked();
+
 private:
     Ui::DialogChefAgence *ui;
 };

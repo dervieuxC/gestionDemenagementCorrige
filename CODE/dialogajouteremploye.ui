@@ -169,7 +169,7 @@
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLineEdit" name="lineEdit">
+                        <widget class="QLineEdit" name="lineEditDateNaissanceEmploye">
                          <property name="inputMask">
                           <string>9999-99-99; </string>
                          </property>

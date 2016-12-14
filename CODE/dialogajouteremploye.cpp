@@ -1,5 +1,6 @@
 #include "dialogajouteremploye.h"
 #include "ui_dialogajouteremploye.h"
+#include <QRadioButton>
 
 DialogAjouterEmploye::DialogAjouterEmploye(QWidget *parent) :
     QDialog(parent),
@@ -13,7 +14,7 @@ DialogAjouterEmploye::~DialogAjouterEmploye()
     delete ui;
 }
 
-/*
+
 // modif apti
 QString DialogAjouterEmploye::getNomEmploye()
 {
@@ -45,16 +46,25 @@ QString DialogAjouterEmploye::getTelEmploye()
     return ui->lineEditTelEmploye->text();
 }
 
+QString DialogAjouterEmploye::getDateEmploye()
+{
+    return ui->lineEditDateNaissanceEmploye->text();
+}
+
 
 QString DialogAjouterEmploye::getTypeEmploye()
 {
-   // à finir, à renvoyer le type de l'employé
+    if(ui->radioButtonCommercial->isChecked())
+    {
+        return "commercial";
+    }
+    else
+        return "demenageur";
+
 }
+
 
 QString DialogAjouterEmploye::getLoginEmploye()
 {
     return ui->lineEditLoginEmploye->text();
 }
-
-
-*/
