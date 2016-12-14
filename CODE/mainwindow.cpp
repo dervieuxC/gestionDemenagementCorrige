@@ -92,8 +92,6 @@ void MainWindow::on_actionQuitter_triggered()
 
 void MainWindow::on_pushButtonConnexion_clicked()
 {
-
-
     QString id=ui->lineEditID->text();
     QString mdp=ui->lineEditMDP->text();
     QSqlQuery laRequete;
