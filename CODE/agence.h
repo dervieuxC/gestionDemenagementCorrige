@@ -152,6 +152,14 @@ public:
      */
     void setMail(const QString &value);
 
+    QString getVille();
+
+    void setVille (QString value);
+
+    int getCp();
+
+    void setCp(int value);
+
     /**
      * @brief Récupère les salariés de l'agence.
      * Permet de récupérer le vecteur de salarié de l'agence courante.
@@ -200,7 +208,6 @@ public:
      */
     void setChefAgence(Salarie *value);
 
-
 private:   
     // Attributs privés
 
@@ -209,6 +216,8 @@ private:
     QString adresse;
     int telephone;
     int fax;
+    int cp;
+    QString ville;
     QString mail;
     QVector<Salarie*> vectSalariesAgence;
     QVector<Vehicule> vectVehiculesAgence;

@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include <QSqlQuery>
+#include <QVector>
 #include <QDebug>
 #include "salarie.h"
 #include "agence.h"
@@ -28,6 +29,7 @@ public:
     ~MainWindow();
 
 
+
 private slots:
     void on_actionQuitter_triggered();
 
@@ -35,6 +37,16 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QVector<Agence> vectAgence;
+    QVector<Salarie> vectSalarie;
+    QVector<Permis> vectPermis;
+    Agence agenceChoisis;
+    void chargerPermis();
+    void chargerAgences();
+    void chargerSalaries();
+    void AjouterPermis(int idPermis, QString libellePermis);
+    void AjouterSalarie(int idSalarie);
+    void AjouterAgence(int idAgence);
 };
 
 #endif // MAINWINDOW_H
