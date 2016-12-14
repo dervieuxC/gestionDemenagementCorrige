@@ -162,14 +162,14 @@
                        <item>
                         <widget class="QLineEdit" name="lineEditDateDebutArretMaladie">
                          <property name="inputMask">
-                          <string>9999-99-99; </string>
+                          <string>9999-99-99</string>
                          </property>
                         </widget>
                        </item>
                        <item>
                         <widget class="QLineEdit" name="lineEditDateFinArretMaladie">
                          <property name="inputMask">
-                          <string>9999-99-99; </string>
+                          <string>9999-99-99</string>
                          </property>
                         </widget>
                        </item>
@@ -239,7 +239,7 @@
                  <item>
                   <widget class="QLabel" name="label">
                    <property name="text">
-                    <string>ex: était malade, a eu une opération  </string>
+                    <string>ex: était malade, a eu une opération  du zizi </string>
                    </property>
                   </widget>
                  </item>
