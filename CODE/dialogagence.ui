@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>538</width>
-    <height>402</height>
+    <height>415</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -32,7 +32,7 @@
                 </font>
                </property>
                <property name="text">
-                <string>Ajout un agence</string>
+                <string>Ajout une agence</string>
                </property>
               </widget>
              </item>
@@ -212,13 +212,6 @@
     </layout>
    </item>
   </layout>
-  <zorder>labelVilleAgence</zorder>
-  <zorder>labelCPAgence</zorder>
-  <zorder>lineEditCPAgence</zorder>
-  <zorder>lineEditVilleAgence</zorder>
-  <zorder>labelMailAgence</zorder>
-  <zorder>horizontalSpacer_2</zorder>
-  <zorder>verticalSpacer_3</zorder>
  </widget>
  <resources/>
  <connections>
