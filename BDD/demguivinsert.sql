@@ -82,21 +82,21 @@ INSERT INTO obtention VALUES
 ('1992-09-12',2,1),
 ('1991-02-12',1,2),
 ('1999-05-25',3,3),
-('1997-03-30',2,);
+('1997-03-30',2,4);
 
 
 INSERT INTO dossier_demenagement VALUES
-('','2 rue des alouettes', 'Gap', '05000', '1 place de la poutre','Gap','05000', '2016-12-28', '2016-12-20', '2016-12-27','2016-12-06', 'en cours', '2' , '5', 15, 1, 3, 1),
-('','2 rue des peuples lieer', 'Gap', '05000', '3 place de la poutre','Saint-Bonnet','05500', '2015-12-28', '2015-12-20', '2015-12-27','2015-12-06', 'termine', '1' , '20', 100, 1, 7, 3);
+('','2 rue des alouettes', 'Gap', '05000', '1 place de la poutre','Gap','05000', '2016-12-28', '2016-12-20', '2016-12-27','2016-12-06', 'en cours', '2' , '5', 15, 1, 7, 4),
+('','2 rue des peuples lieer', 'Gap', '05000', '3 place de la poutre','Saint-Bonnet','05500', '2015-12-28', '2015-12-20', '2015-12-27','2015-12-06', 'termine', '1' , '20', 100, 1, 7, 5);
 
 INSERT INTO participer VALUES
-(1,1),
-(1,2),
-(2,2);
+(4,1),
+(5,2),
+(6,2);
 
 
 INSERT INTO utiliser VALUES
-(1,'22-AYU-56'),
-(2,'35-DER-69');
+(1,'99-OEC-96'),
+(2,'22-AYU-56');
 
 
