@@ -1,6 +1,6 @@
 #ifndef DIALOGSALARIE_H
 #define DIALOGSALARIE_H
-
+#include "dialogpermis.h"
 #include <QDialog>
 
 namespace Ui {
@@ -14,6 +14,9 @@ class DialogSalarie : public QDialog
 public:
     explicit DialogSalarie(QWidget *parent = 0);
     ~DialogSalarie();
+
+private slots:
+    void on_pushButtonPasserPermis_clicked();
 
 private:
     Ui::DialogSalarie *ui;

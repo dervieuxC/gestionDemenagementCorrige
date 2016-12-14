@@ -72,12 +72,15 @@
        <string>Demande de congé</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButtonDemandeAbsence">
+     <widget class="QPushButton" name="pushButtonPasserPermis">
       <property name="text">
        <string>Passer Permis</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButtonDemandeAbsence_2">
+     <widget class="QPushButton" name="pushButtonGererDemenagement">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="text">
        <string>Gerer Déménagement</string>
       </property>

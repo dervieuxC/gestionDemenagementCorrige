@@ -38,6 +38,7 @@ private:
     Ui::MainWindow *ui;
     QVector<Agence> vectAgence;
     QVector<Salarie> vectSalarie;
+    QVector<Permis> vectPermis;
     Agence agenceChoisis;
 };
 

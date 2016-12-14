@@ -37,7 +37,8 @@ SOURCES += main.cpp\
     dialogcommercial.cpp \
     dialogdemandeabsence.cpp \
     dialogverification.cpp \
-    dialogajoutarretmaladie.cpp
+    dialogajoutarretmaladie.cpp \
+    dialogpermis.cpp
 
 HEADERS  += mainwindow.h \
     dialogajoutdossiercommercial.h \
@@ -63,7 +64,8 @@ HEADERS  += mainwindow.h \
     dialogchefentreprise.h \
     dialogcommercial.h \
     dialogdemandeabsence.h \
-    dialogajoutarretmaladie.h
+    dialogajoutarretmaladie.h \
+    dialogpermis.h
 
 
 
@@ -78,7 +80,8 @@ FORMS  += mainwindow.ui \
     dialogajouteremploye.ui \
     dialogdemandeabsence.ui \
     dialogajoutarretmaladie.ui \
-    dialogsalarie.ui
+    dialogsalarie.ui \
+    dialogpermis.ui
 
 RESOURCES += \
     ma_ressource.qrc

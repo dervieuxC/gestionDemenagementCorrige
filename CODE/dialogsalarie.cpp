@@ -12,3 +12,9 @@ DialogSalarie::~DialogSalarie()
 {
     delete ui;
 }
+
+void DialogSalarie::on_pushButtonPasserPermis_clicked()
+{
+    DialogPermis dialPermis;
+    dialPermis.show();
+}
