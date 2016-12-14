@@ -110,6 +110,27 @@ void Agence::setMail(const QString &value)
 {
     mail = value;
 }
+
+QString Agence::getVille()
+{
+    return ville;
+}
+
+void Agence::setVille(QString value)
+{
+    ville = value;
+}
+
+int Agence::getCp()
+{
+    return cp;
+}
+
+void Agence::setCp(int value)
+{
+    cp = value;
+}
+
 QVector<Salarie*> Agence::getVectSalariesAgence() const
 {
     return vectSalariesAgence;
