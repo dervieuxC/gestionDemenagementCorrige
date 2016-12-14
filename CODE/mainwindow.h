@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include <QSqlQuery>
+#include <QVector>
 #include <QDebug>
 #include "salarie.h"
 #include "agence.h"
@@ -35,6 +36,9 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QVector<Agence> vectAgence;
+    QVector<Salarie> vectSalarie;
+    Agence agenceChoisis;
 };
 
 #endif // MAINWINDOW_H
