@@ -6,9 +6,11 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     QSqlDatabase dbContact=QSqlDatabase::addDatabase("QMYSQL");
+    //grant all privileges on dbGestionDemenagement.* to admDemenagement@'%' identified by 'demgui01';
+    dbContact.setHostName("172.29.56.5");
     dbContact.setDatabaseName("dbGestionDemenagement");
     dbContact.setUserName("admDemenagement");
-    dbContact.setPassword("123456789");
+    dbContact.setPassword("demgui01");
     if(dbContact.open())
     {
         MainWindow w;
